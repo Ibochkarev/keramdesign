@@ -1,0 +1,31 @@
+.collection-item {
+  &__wrapper {
+    position: relative;
+  }
+
+  &__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $a-color-black;
+    color: $a-color-white;
+    padding: 5px 10px;
+  }
+
+  &__image {
+    object-fit: cover;
+    height: 350px;
+    margin-bottom: 20px;
+  }
+
+  &__headline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__info {
+    display: flex;
+    align-content: center;
+  }
+}

@@ -1115,6 +1115,10 @@ img {
   display: none !important;
 }
 
+.section {
+  padding: 35px 0;
+}
+
 @keyframes show {
   from {
     opacity: 0;
@@ -1286,6 +1290,52 @@ img {
   background: #fff;
 }
 
+.section {
+  padding: 26px 0;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 34px;
+}
+
+.section-heading__title {
+  margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 39px;
+  font-weight: 800;
+  line-height: 1.03;
+  color: #1c1c1c;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+}
+
+.section-heading__link {
+  height: 40px;
+  padding-right: 18px;
+  padding-left: 18px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 39px;
+  border-radius: 30px;
+  background-color: #edf2f6;
+  letter-spacing: -0.2px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.section-heading__link span {
+  color: #6c7a88;
+}
+
+.section-heading__link:hover {
+  color: #1c1c1c;
+  opacity: 0.7;
+}
+
 .main-slider {
   position: relative;
   overflow: hidden;
@@ -1329,6 +1379,36 @@ img {
 
 .main-slider__item-btn {
   max-width: max-content;
+}
+
+.collection-item__wrapper {
+  position: relative;
+}
+
+.collection-item__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1c1c1c;
+  color: #ffffff;
+  padding: 5px 10px;
+}
+
+.collection-item__image {
+  object-fit: cover;
+  height: 350px;
+  margin-bottom: 20px;
+}
+
+.collection-item__headline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.collection-item__info {
+  display: flex;
+  align-content: center;
 }
 
 @media screen and (max-width: 1799px) {
@@ -1375,6 +1455,19 @@ img {
   }
 }
 
+@media (max-width: 768px) {
+  .section-heading {
+    margin-bottom: 15px;
+  }
+
+  .section-heading__title {
+    margin-right: 70px;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: -0.32px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .main.js-fixed {
     margin-top: 78px;
@@ -1403,6 +1496,23 @@ img {
 
   .l-header {
     padding: 0 16px;
+  }
+}
+
+@media (max-width: 570px) {
+  .section-heading__title {
+    margin-right: 70px;
+    font-size: 19px;
+    line-height: 1.05;
+    letter-spacing: -0.19px;
+  }
+
+  .section-heading__link {
+    background-color: transparent;
+  }
+
+  .section-heading__link span {
+    display: none;
   }
 }
 
