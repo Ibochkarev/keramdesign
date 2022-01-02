@@ -1,0 +1,37 @@
+-
+  const slides=[
+    {
+      img: "01",
+      title: "Огромный шоурум керамической плитки",
+      text: "Два этажа эксклюзивной дизайнерской плитки от ведущих мировых производителей керамической плитки по ценам производителя",
+      textBtn: "Адрес на карте",
+      linkBtn: "#"
+    },
+    {
+      img: "02",
+      title: "Огромный шоурум керамической плитки 2",
+      text: "Два этажа эксклюзивной дизайнерской плитки от ведущих мировых производителей керамической плитки по ценам производителя",
+      textBtn: "Адрес на карте",
+      linkBtn: "#"
+    },
+  ];
+
+.main-slider
+  .l-default
+    .swiper-container.main-slider__wrapper
+      .swiper-wrapper
+        each slide in slides
+          .swiper-slide.main-slider__slide
+            .main-slider__item
+              .main-slider__item-wrapper
+                picture
+                  source(srcset="img/main-slider/" + slide.img + ".webp" type="image/webp")
+                  source(srcset="img/main-slider/" + slide.img + ".png" type="image/png")
+                  img.main-slider__item-bg(src="main-slider/" + slide.img + ".jpg" alt="")
+                .main-slider__item-info
+                  h2.main-slider__item-title=slide.title
+                  .main-slider__item-text=slide.text
+                  a.main-slider__item-btn.btn.btn--white(href=slide.linkBtn)=slide.textBtn
+      .swiper-pagination
+      .swiper-button-prev
+      .swiper-button-next

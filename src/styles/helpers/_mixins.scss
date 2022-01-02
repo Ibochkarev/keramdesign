@@ -54,25 +54,43 @@
   $declarations: ();
 
   @each $declaration in $properties {
-      $duration: .4s;
-      $delay: false;
-      $timing-function: ease;
-      $property: all;
+    $duration: 0.4s;
+    $delay: false;
+    $timing-function: ease;
+    $property: all;
 
-      @if type-of($declaration) == 'map' {
-          $duration: if(map_get($declaration, 'duration'), #{map_get($declaration, 'duration')}, $duration);
-          $delay: if(map_get($declaration, 'delay'), #{map_get($declaration, 'delay')}, $delay);
-          $timing-function: if(map_get($declaration, 'timing-function'), #{map_get($declaration, 'timing-function')}, $timing-function);
-          $property: if(map_get($declaration, 'property'), #{map_get($declaration, 'property')}, $property);
-      } @else {
-          $property: $declaration;
-      }
-      
-      $delayValue: if($delay, ' ' + $delay, '');
-      $declarations: append($declarations, #{$property + ' ' + $duration + $delayValue + ' ' + $timing-function}, comma);
+    @if type-of($declaration) == "map" {
+      $duration: if(
+        map_get($declaration, "duration"),
+        #{map_get($declaration, "duration")},
+        $duration
+      );
+      $delay: if(
+        map_get($declaration, "delay"),
+        #{map_get($declaration, "delay")},
+        $delay
+      );
+      $timing-function: if(
+        map_get($declaration, "timing-function"),
+        #{map_get($declaration, "timing-function")},
+        $timing-function
+      );
+      $property: if(
+        map_get($declaration, "property"),
+        #{map_get($declaration, "property")},
+        $property
+      );
+    } @else {
+      $property: $declaration;
+    }
+
+    $delayValue: if($delay, " " + $delay, "");
+    $declarations: append(
+      $declarations,
+      #{$property + " " + $duration + $delayValue + " " + $timing-function},
+      comma
+    );
   }
 
   transition: $declarations;
 }
-
-

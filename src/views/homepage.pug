@@ -5,8 +5,10 @@ block variables
   - const title = "Главная страница проекта"
 
 block content
-      include ../blocks/modules/header/header.pug
-      include ../blocks/modules/footer/footer.pug
+  include ../blocks/modules/header/header.pug
+  main.main
+    include ../blocks/modules/main-slider/main-slider.pug
+  include ../blocks/modules/footer/footer.pug
 
 block scripts
   script(defer src="js/vendor.js")
