@@ -1,0 +1,62 @@
+-
+  const newCollectionsSlides=[
+    {
+      img: "01",
+      title: "Коллекция Calacatta",
+      amount: "7 товаров",
+      brand: "Xlight",
+      country: "Испания",
+      label: "Остатки",
+      link: "#",
+    },
+    {
+      img: "02",
+      title: "Коллекция Glem",
+      amount: "7 товаров",
+      brand: "Xlight",
+      country: "Испания",
+      label: "Новинка",
+      link: "#",
+    },
+    {
+      img: "03",
+      title: "Коллекция Glem",
+      amount: "7 товаров",
+      brand: "Xlight",
+      country: "Испания",
+      label: "",
+      link: "#",
+    },
+  ];
+
+secton.section.new-collections
+  .l-default
+    .section__wrapper
+      +header-section({
+        title: "Коллекции по вашему вкусу",
+        name: "Все коллекции",
+        link: "#"
+      })
+      .swiper-container.new-collections__slider
+        .swiper-wrapper
+          each slide in newCollectionsSlides
+            .swiper-slide.new-collections__slide
+              .collection-item
+                .collection-item__wrapper
+                  a(href=slide.link aria-label=slide.title)
+                    picture
+                      source(srcset="img/new-collections/" + slide.img + ".webp" type="image/webp")
+                      source(srcset="img/new-collections/" + slide.img + ".png" type="image/png")
+                      img.collection-item__image(src="new-collections/" + slide.img + ".jpg" alt=slide.title)
+                  - if (slide.label !== '')
+                    .collection-item__label=slide.label
+                  - else
+                    .collection-item__label._hide
+                .collection-item__headline
+                  h3.collection-item__title=slide.title
+                  .collection-item__amount=slide.amount
+                .collection-item__info
+                  .collection-item__brand=slide.brand
+                  .collection-item__country=slide.country
+        .swiper-button-prev.new-collection__slider-button__prev
+        .swiper-button-next.new-collection__slider-button__next

@@ -1290,6 +1290,55 @@ img {
   background: #fff;
 }
 
+.header__top {
+  background-color: #1c1c1c;
+  padding: 10px 0;
+}
+
+.header__top-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__top-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header__top-menu__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.header__top-menu__link {
+  color: #ffffff;
+}
+
+.header__socials {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.header__socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.header__socials-link {
+  color: #ffffff;
+}
+
+.header__bottom {
+  padding: 15px 0;
+}
+
+.header__bottom-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .section {
   padding: 26px 0;
 }

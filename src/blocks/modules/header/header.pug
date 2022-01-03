@@ -1,0 +1,64 @@
+-
+  const socials=[
+    {
+      img: "twitter",
+      label: "Twitter",
+      link: "#",
+    },
+    {
+      img: "instagram",
+      label: "Instagram",
+      link: "#",
+    },
+    {
+      img: "facebook",
+      label: "Facebook",
+      link: "#",
+    },
+  ];
+
+-
+  const topMenu=[
+    {
+      label: "Как купить?",
+      link: "#",
+    },
+    {
+      label: "Доставка и самовывоз",
+      link: "#",
+    },
+    {
+      label: "Возврат",
+      link: "#",
+    },
+    {
+      label: "Шоурум",
+      link: "#",
+    },
+    {
+      label: "Контакты",
+      link: "#",
+    },
+  ];
+
+header.header
+  .header__top
+    .l-default
+      .header__top-wrapper
+        nav.header__socials
+          each social in socials
+            li.header__socials-item
+              a.header__socials-link(href=social.link, aria-label=social.label)
+                img(src=social.img, alt=social.label)
+        nav.header__top-menu
+          each item in topMenu
+            li.header__top-menu__item
+              a.header__top-menu__link(href=item.link, aria-label=item.label)=item.label
+
+  .header__bottom
+    .l-default
+      .header__bottom-wrapper
+        .header__logo logo
+        .header__search search
+        .header__phone phone
+        .header__info info

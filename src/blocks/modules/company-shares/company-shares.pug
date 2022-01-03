@@ -1,0 +1,70 @@
+-
+  const shares=[
+    {
+      img: "01",
+      title: "Напольная плитка 3301 OTTAGONETTA NERO MATT 15*15",
+      label: "Акция",
+      link: "#",
+      price: "920",
+      oldPrice: "1180"
+    },
+    {
+      img: "02",
+      title: "Напольная плитка 3301 OTTAGONETTA NERO MATT 15*15",
+      label: "Акция",
+      link: "#",
+      price: "920",
+      oldPrice: "1180"
+    },
+    {
+      img: "03",
+      title: "Керамогранит BREMEN RIEMCHEN UNGESPALTEN (из 3-х шт) BIEGE 24,5x7",
+      label: "",
+      link: "#",
+      price: "920",
+      oldPrice: "1180"
+    },
+    {
+      img: "04",
+      title: "Напольная плитка 3301 OTTAGONETTA NERO MATT 15*15",
+      label: "Акция",
+      link: "#",
+      price: "920",
+      oldPrice: "1180"
+    },
+    {
+      img: "05",
+      title: "Напольная плитка 3301 OTTAGONETTA NERO MATT 15*15",
+      label: "Акция",
+      link: "#",
+      price: "920",
+      oldPrice: "1180"
+    },
+  ];
+
+secton.section.company-shares
+  .l-default
+    .section__wrapper
+      +header-section({
+        title: "Акции от производителей",
+        name: "Смотреть всё",
+        link: "#"
+      })
+      .swiper-container.company-shares__slider
+        .swiper-wrapper
+          each slide in shares
+            .swiper-slide.company-shares__slide
+              .collection-item
+                .company-shares__wrapper
+                  a(href=slide.link aria-label=slide.title)
+                    picture
+                      source(srcset="img/new-collections/" + slide.img + ".webp" type="image/webp")
+                      source(srcset="img/new-collections/" + slide.img + ".png" type="image/png")
+                      img.company-shares__image(src="new-collections/" + slide.img + ".jpg" alt=slide.title)
+                  - if (slide.label !== '')
+                    .company-shares__label=slide.label
+                  - else
+                    .company-shares__label._hide
+                  h3.company-shares__title=slide.title
+        .swiper-button-prev.company-shares__slider-button__prev
+        .swiper-button-next.company-shares__slider-button__next
