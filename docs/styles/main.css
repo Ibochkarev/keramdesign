@@ -1488,6 +1488,12 @@ img {
   grid-gap: 20px;
 }
 
+.useful-articles__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
 @media screen and (max-width: 1799px) {
   .l-default {
     padding: 0 30px;
@@ -1529,6 +1535,10 @@ img {
 @media (max-width: 991px) {
   .btn {
     font-size: 18px;
+  }
+
+  .useful-articles__wrapper {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1579,6 +1589,12 @@ img {
 
   .l-header {
     padding: 0 16px;
+  }
+}
+
+@media (max-width: 574px) {
+  .useful-articles__wrapper {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

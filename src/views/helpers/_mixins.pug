@@ -8,7 +8,8 @@ mixin header-section(data)
       if data.link
         a.section-heading__link(href!=data.link aria-label!=data.name)
           span!=data.name
-    .section-heading__description!=data.description
+    if data.description
+      .section-heading__description!=data.description
 
 //-  Пример использования
 //- +header-section({
@@ -26,7 +27,7 @@ mixin collection-item(data)
         picture
           source(srcset="img/new-collections/" + data.img + ".webp" type="image/webp")
           source(srcset="img/new-collections/" + data.img + ".png" type="image/png")
-          img.collection-item__image(src="new-collections/" + data.img + ".jpg" alt!=data.title)
+          img.collection-item__image(src="img/new-collections/" + data.img + ".jpg" alt!=data.title)
       if data.label
         .collection-item__label!=data.label
     .collection-item__headline
@@ -43,7 +44,7 @@ mixin collection-item-full(data)
         picture
           source(srcset="img/new-collections/" + data.img + ".webp" type="image/webp")
           source(srcset="img/new-collections/" + data.img + ".png" type="image/png")
-          img.collection-item__image(src="new-collections/" + data.img + ".jpg" alt!=data.title)
+          img.collection-item__image(src="img/new-collections/" + data.img + ".jpg" alt!=data.title)
       if data.label
         .collection-item__label!=data.label
     .collection-item__wrap
@@ -62,6 +63,16 @@ mixin collection-item-full(data)
         |
         | /м
         sup 2
+
+mixin article-card(data)
+  .article-item
+    a.article-item__info(href="article-page.html")
+      picture
+        source(srcset="img/articles/" + data.img + ".webp" type="image/webp")
+        source(srcset="img/articles/" + data.img + ".png" type="image/png")
+        img.article-item__img(src="img/articles/" + data.img + ".jpg" alt!=data.title)
+    .article-item__wrap
+      .article-item__title!=data.title
 
 mixin svgMono(name, modClass)
   if modClass == undefined

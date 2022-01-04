@@ -10,21 +10,21 @@ $(document).ready(function() {
       prevButton: $(".collections-list__slider .swiper-button-prev")[i],
 
       // Optional parameters
-      slidesPerView: 4,
+      slidesPerView: 1,
       spaceBetween: 30,
       watchOverflow: true,
       grabCursor: true,
-      // breakpoints: {
-      //   767: {
-      //     slidesPerView: 1
-      //   },
-      //   1024: {
-      //     slidesPerView: 2
-      //   },
-      //   1270: {
-      //     slidesPerView: 1
-      //   }
-      // },
+      breakpoints: {
+        574: {
+          slidesPerView: 2
+        },
+        992: {
+          slidesPerView: 3
+        },
+        1200: {
+          slidesPerView: 4
+        }
+      },
     });
   });
 });
