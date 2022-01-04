@@ -1460,6 +1460,21 @@ img {
   align-content: center;
 }
 
+.lead-form {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.lead-form__wrapper {
+  padding: 25px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 @media screen and (max-width: 1799px) {
   .l-default {
     padding: 0 30px;

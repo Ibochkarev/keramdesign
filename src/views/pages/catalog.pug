@@ -1,0 +1,15 @@
+extends ../layouts/default
+include ../helpers/_mixins
+
+block variables
+  - const title = "Каталог керамической плитки"
+
+block content
+  include ../../blocks/modules/header/header.pug
+  main.main
+    include ../../blocks/modules/lead-form/lead-form.pug
+  include ../../blocks/modules/footer/footer.pug
+
+block scripts
+  script(defer src="./js/vendor.js")
+  script(defer src="./js/main.js")

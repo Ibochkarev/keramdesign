@@ -3,7 +3,7 @@ import {Swiper, Mousewheel, Navigation} from "swiper";
 Swiper.use([Mousewheel, Navigation]);
 
 let companySharesSlider = new Swiper(".company-shares__slider", {
-    slidesPerView: 3,
+    slidesPerView: 5,
     spaceBetween: 30,
     watchOverflow: true,
     navigation: {
