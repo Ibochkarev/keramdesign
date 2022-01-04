@@ -1,14 +1,10 @@
-import {Swiper, Mousewheel, EffectFade, Navigation} from "swiper";
+import {Swiper, Mousewheel, Navigation} from "swiper";
 
-Swiper.use([Mousewheel, EffectFade, Navigation]);
+Swiper.use([Mousewheel, Navigation]);
 
 let newCollectionSlider = new Swiper(".new-collections__slider", {
     slidesPerView: 3,
     spaceBetween: 30,
-    effect: 'fade',
-    fadeEffect: {
-        crossFade: true
-    },
     watchOverflow: true,
     navigation: {
       nextEl: '.new-collection__slider-button__next',
