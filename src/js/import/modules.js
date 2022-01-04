@@ -6,3 +6,4 @@ import "%modules%/new-collections/new-collections";
 import "%modules%/collections-product/collections-product";
 import "%modules%/page-catalog/page-catalog";
 import "%modules%/company-shares/company-shares";
+import "%modules%/brands-section/brands-section";
