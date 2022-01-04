@@ -1,0 +1,59 @@
+extends ../layouts/default
+include ../helpers/_mixins
+
+block variables
+  - const title = "Полезные статьи"
+
+block content
+  include ../../blocks/modules/header/header.pug
+  main.main
+    .page-articles
+      .page__container.l-default
+        include ../../blocks/modules/sidebar-menu/sidebar-menu.pug
+
+        .page__content
+          .page-articles__list
+            +article-card({
+              title: "График работы на Новогодние праздники",
+              img: "01",
+            })
+            +article-card({
+              title: "АКЦИЯ! Грандиозная весна. Скидки до 25% на плитку и сантехнику",
+              img: "02",
+            })
+            +article-card({
+              title: "Новинка! Керамогранит 75х75",
+              img: "03",
+            })
+            +article-card({
+              title: "Фирменный шоу-рум ИТАЛОН | ITALON",
+              img: "04",
+            })
+            +article-card({
+              title: "График работы на Новогодние праздники",
+              img: "01",
+            })
+            +article-card({
+              title: "АКЦИЯ! Грандиозная весна. Скидки до 25% на плитку и сантехнику",
+              img: "02",
+            })
+            +article-card({
+              title: "Новинка! Керамогранит 75х75",
+              img: "03",
+            })
+            +article-card({
+              title: "Фирменный шоу-рум ИТАЛОН | ITALON",
+              img: "04",
+            })
+            +article-card({
+              title: "График работы на Новогодние праздники",
+              img: "01",
+            })
+          .page-articles__btn-wrap
+            button.btn.btn--black(type="button", aria-label="Показать еще") Показать еще
+
+  include ../../blocks/modules/footer/footer.pug
+
+block scripts
+  script(defer src="./js/vendor.js")
+  script(defer src="./js/main.js")

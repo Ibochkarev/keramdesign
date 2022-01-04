@@ -1,0 +1,45 @@
+-
+  const nav=[
+    {
+      title: "О компании",
+      img: "",
+      link: "#",
+    },
+    {
+      title: "Гарантия и сервис",
+      img: "",
+      link: "#",
+    },
+    {
+      title: "Доставка",
+      img: "",
+      link: "#",
+    },
+    {
+      title: "Оплата",
+      img: "",
+      link: "#",
+    },
+    {
+      title: "Оптовикам",
+      img: "",
+      link: "#",
+    },
+    {
+      title: "Контакты",
+      img: "",
+      link: "#",
+    },
+    {
+      title: "Полезные статьи",
+      img: "",
+      link: "#",
+    },
+  ];
+
+nav.page__sidebar
+  each item in nav
+    li.page__sidebar-item
+      a.page__sidebar-link(href=item.link aria-label=item.title)
+        img(src=item.image, alt=item.title)
+        span=item.title
