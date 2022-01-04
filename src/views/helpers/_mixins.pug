@@ -19,8 +19,25 @@ mixin header-section(data)
 //-   description: ""
 //- })
 
-mixin collection-item-full(data)
+mixin collection-item(data)
   .collection-item
+    .collection-item__wrapper
+      a(href!=data.link aria-label!=data.title)
+        picture
+          source(srcset="img/new-collections/" + data.img + ".webp" type="image/webp")
+          source(srcset="img/new-collections/" + data.img + ".png" type="image/png")
+          img.collection-item__image(src="new-collections/" + data.img + ".jpg" alt!=data.title)
+      if data.label
+        .collection-item__label!=data.label
+    .collection-item__headline
+      h3.collection-item__title!=data.title
+      .collection-item__amount!=data.amount
+    .collection-item__info
+      .collection-item__brand!=data.brand
+      .collection-item__country!=data.country
+
+mixin collection-item-full(data)
+  .collection-item.collection-item--full
     .collection-item__wrapper
       a(href!=data.link aria-label!=data.title)
         picture

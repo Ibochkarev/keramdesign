@@ -7,27 +7,7 @@ block variables
 block content
   include ../../blocks/modules/header/header.pug
   main.main
-    section.page-collections
-      .l-default
-        +header-section({
-          title: "Коллекции плитки для ванной",
-          name: "Вся плитка для ванной",
-          link: "#",
-          tag: "h1",
-          description: "<p>ipsum dolor sit amet, consectetur adipisicing elit. Iusto explicabo aperiam dignissimos placeat. Vero facere expedita in similique reprehenderit impedit, veniam numquam quis deserunt culpa quibusdam deleniti assumenda, minima ratione.</p><p>ipsum dolor sit amet, consectetur adipisicing elit. Iusto explicabo aperiam dignissimos placeat. Vero facere expedita in similique reprehenderit impedit, veniam numquam quis deserunt culpa quibusdam deleniti assumenda, minima ratione.</p>"
-        })
-        .page-collections__list
-          +collection-item-full({
-            img: "01",
-            title: "Коллекция Calacatta",
-            amount: "7 товаров",
-            brand: "Xlight",
-            country: "Испания",
-            label: "Остатки",
-            link: "#",
-            description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-          })
-
+    include ../../blocks/modules/page-collections/page-collections.pug
     include ../../blocks/modules/lead-form/lead-form.pug
   include ../../blocks/modules/footer/footer.pug
 

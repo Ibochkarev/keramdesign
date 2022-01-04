@@ -1453,7 +1453,6 @@ img {
 
 .collection-item__image {
   object-fit: cover;
-  height: 350px;
   margin-bottom: 20px;
 }
 
@@ -1481,6 +1480,12 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.page-collections__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
 }
 
 @media screen and (max-width: 1799px) {
@@ -1537,6 +1542,12 @@ img {
     font-size: 32px;
     line-height: 1.25;
     letter-spacing: -0.32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-collections__list {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
