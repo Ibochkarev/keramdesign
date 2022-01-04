@@ -1,16 +1,50 @@
 mixin header-section(data)
   header.section-heading
-    h3.section-heading__title!=data.title
-    if data.link
-      a.section-heading__link(href!=data.link aria-label!=data.name)
-        span!=data.name
+    .section-heading__wrapper
+      - if (data.tag == 'h1')
+        h1.section-heading__title!=data.title
+      - else
+        h2.section-heading__title!=data.title
+      if data.link
+        a.section-heading__link(href!=data.link aria-label!=data.name)
+          span!=data.name
+    .section-heading__description!=data.description
 
 //-  Пример использования
 //- +header-section({
 //-   title: "Полезные статьи",
 //-   name: "Все статьи",
-//-   link: "page-articles.html"
+//-   tag: "h1",
+//-   link: "page-articles.html",
+//-   description: ""
 //- })
+
+mixin collection-item-full(data)
+  .collection-item
+    .collection-item__wrapper
+      a(href!=data.link aria-label!=data.title)
+        picture
+          source(srcset="img/new-collections/" + data.img + ".webp" type="image/webp")
+          source(srcset="img/new-collections/" + data.img + ".png" type="image/png")
+          img.collection-item__image(src="new-collections/" + data.img + ".jpg" alt!=data.title)
+      if data.label
+        .collection-item__label!=data.label
+    .collection-item__wrap
+      .collection-item__info
+        .collection-item__headline
+          h3.collection-item__title!=data.title
+          .collection-item__amount!=data.amount
+        .collection-item__description!=data.description
+        .collection-item__info
+          .collection-item__brand!=data.brand
+          .collection-item__country!=data.country
+      .collection-item__price-block
+        span от
+        |
+        | 12180 ₽
+        |
+        | /м
+        sup 2
 
 mixin svgMono(name, modClass)
   if modClass == undefined

@@ -1344,10 +1344,13 @@ img {
 }
 
 .section-heading {
+  margin-bottom: 34px;
+}
+
+.section-heading__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 34px;
 }
 
 .section-heading__title {
@@ -1383,6 +1386,11 @@ img {
 .section-heading__link:hover {
   color: #1c1c1c;
   opacity: 0.7;
+}
+
+.section-heading__description {
+  max-width: 1000px;
+  margin-bottom: 20px;
 }
 
 .main-slider {

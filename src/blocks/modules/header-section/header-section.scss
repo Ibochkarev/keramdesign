@@ -2,10 +2,13 @@
   padding: 26px 0;
 
   &-heading {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     margin-bottom: 34px;
+
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
     &__title {
       margin-bottom: 0;
@@ -40,6 +43,11 @@
         color: #1c1c1c;
         opacity: 0.7;
       }
+    }
+
+    &__description {
+      max-width: 1000px;
+      margin-bottom: 20px;
     }
   }
 }
