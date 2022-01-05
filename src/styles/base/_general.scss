@@ -176,7 +176,7 @@ img {
     font-size: 58px;
     line-height: 120%;
     text-transform: uppercase;
-    opacity: 0;
+    // opacity: 0;
     transition: all 0.4s ease;
 
     @media screen and (max-width: 1199px) {
@@ -187,7 +187,7 @@ img {
     }
 
     &.element-animation {
-      opacity: 0;
+      // opacity: 0;
     }
 
     &.element-animation.element-show {
@@ -386,14 +386,10 @@ img {
     grid-template-areas: "side content";
     grid-template-columns: 300px 1fr;
     grid-gap: 20px;
-    height: 100vh;
 
     @media (max-width: 768px) {
       grid-template-areas: "side" "content";
       grid-template-columns: 1fr;
-      grid-template-rows:
-        minmax(75px, auto)
-        1fr;
     }
   }
 

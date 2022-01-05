@@ -2,11 +2,13 @@ extends ../layouts/default
 include ../helpers/_mixins
 
 block variables
-  - const title = "Страница 404 ошибки"
+  - const title = "Страница бренда / производителя"
 
 block content
   include ../../blocks/modules/header/header.pug
-    main.main
+  main.main
+    include ../../blocks/modules/brand-page/brand-page.pug
+    include ../../blocks/modules/lead-form/lead-form.pug
   include ../../blocks/modules/footer/footer.pug
 
 block scripts

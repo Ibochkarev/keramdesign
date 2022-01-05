@@ -973,12 +973,7 @@ img {
   font-size: 58px;
   line-height: 120%;
   text-transform: uppercase;
-  opacity: 0;
   transition: all 0.4s ease;
-}
-
-.title--h1.element-animation {
-  opacity: 0;
 }
 
 .title--h1.element-animation.element-show {
@@ -1124,7 +1119,6 @@ img {
   grid-template-areas: "side content";
   grid-template-columns: 300px 1fr;
   grid-gap: 20px;
-  height: 100vh;
 }
 
 .page__sidebar {
@@ -1370,17 +1364,6 @@ img {
   justify-content: space-between;
 }
 
-.section-heading__title {
-  margin-bottom: 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 39px;
-  font-weight: 800;
-  line-height: 1.03;
-  color: #1c1c1c;
-  letter-spacing: -0.4px;
-  text-transform: uppercase;
-}
-
 .section-heading__link {
   height: 40px;
   padding-right: 18px;
@@ -1535,6 +1518,10 @@ img {
   margin: auto;
 }
 
+.page-brand__wrapper {
+  display: flex;
+}
+
 .useful-articles__wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1669,7 +1656,6 @@ img {
   .page__container {
     grid-template-areas: "side" "content";
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(75px, auto) 1fr;
   }
 
   .section-heading {
