@@ -1517,6 +1517,24 @@ img {
   justify-content: center;
 }
 
+.page-brands__wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+.page-brands__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 135px;
+}
+
+.page-brands__item img {
+  display: block;
+  margin: auto;
+}
+
 .useful-articles__wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1533,6 +1551,62 @@ img {
 .brands__item img {
   display: block;
   margin: auto;
+}
+
+.page__sidebar-item {
+  position: relative;
+  display: block;
+  padding: 15px 16px 14px;
+  color: #1c1c1c;
+  background: #ffffff;
+  transition: all 0.5ms ease-in-out;
+  white-space: nowrap;
+}
+
+.page__sidebar-item::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  content: "";
+  background-image: linear-gradient(to right, #ffffff 0%, #f2f2f2 3%, #eaeaea 98%, #ffffff 100%);
+}
+
+.page__sidebar-item:hover {
+  border-radius: 5px;
+  background-color: #edf2f6;
+}
+
+.page__sidebar-item.active {
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: #5ba5d3;
+}
+
+.page__sidebar-link {
+  display: flex;
+  align-items: center;
+}
+
+.seo-block__wrapper {
+  padding: 30px 0 60px;
+  flex-wrap: wrap;
+  display: flex;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.seo-block__left {
+  flex: 0 0 25%;
+  max-width: 25%;
+  margin-left: 8.33333%;
+}
+
+.seo-block__right {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
 }
 
 @media screen and (max-width: 1799px) {
@@ -1582,6 +1656,10 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .page-brands__wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   .useful-articles__wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1604,11 +1682,27 @@ img {
     line-height: 1.25;
     letter-spacing: -0.32px;
   }
+
+  .seo-block__left {
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-left: 0;
+  }
+
+  .seo-block__right {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
 }
 
 @media (max-width: 767px) {
   .page-collections__list {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .page-brands__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
   }
 }
 
@@ -1646,6 +1740,10 @@ img {
 @media (max-width: 574px) {
   .page-articles__list {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .page-brands__wrapper {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .useful-articles__wrapper {

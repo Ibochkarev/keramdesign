@@ -7,6 +7,10 @@ PageList:
     ready: 1
   - file: collections.html
     ready: 50
+  - file: collection.html
+    ready: 25
+  - file: brands.html
+    ready: 25
   - file: catalog.html
     ready: 50
   - file: articles.html

@@ -1,0 +1,62 @@
+-
+  const brandsList=[
+    {
+      img: "porcelanosa",
+      title: "porcelanosa",
+      link: "#"
+    },
+    {
+      img: "krion",
+      title: "krion",
+      link: "#"
+    },
+    {
+      img: "porcelanosa",
+      title: "porcelanosa",
+      link: "#"
+    },
+    {
+      img: "krion",
+      title: "krion",
+      link: "#"
+    },
+    {
+      img: "porcelanosa",
+      title: "porcelanosa",
+      link: "#"
+    },
+    {
+      img: "krion",
+      title: "krion",
+      link: "#"
+    },
+    {
+      img: "porcelanosa",
+      title: "porcelanosa",
+      link: "#"
+    },
+    {
+      img: "krion",
+      title: "krion",
+      link: "#"
+    },
+    {
+      img: "porcelanosa",
+      title: "porcelanosa",
+      link: "#"
+    },
+  ];
+
+section.page-brands
+  .l-default
+    +header-section({
+      title: "Производители керамической плитки",
+      tag: "h1"
+    })
+    .page-brands__wrapper
+      each slide in brandsList
+        a.page-brands__item(href=slide.link aria-label=slide.title)
+          picture
+            source(srcset="/img/brands/" + slide.img + ".webp" type="image/webp")
+            source(srcset="/img/brands/" + slide.img + ".png" type="image/png")
+            img.page-brands__item-image(src="/img/brands/" + slide.img + ".jpg" alt=slide.title)
