@@ -1523,6 +1523,18 @@ img {
   grid-gap: 20px;
 }
 
+.brands__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 135px;
+}
+
+.brands__item img {
+  display: block;
+  margin: auto;
+}
+
 @media screen and (max-width: 1799px) {
   .l-default {
     padding: 0 30px;

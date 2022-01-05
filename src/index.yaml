@@ -2,7 +2,7 @@ ProjectTitle: ProjectName
 
 PageList:
   - file: homepage.html
-    ready: 1
+    ready: 50
   - file: product.html
     ready: 1
   - file: collections.html

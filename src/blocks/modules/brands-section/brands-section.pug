@@ -1,28 +1,48 @@
 -
   const brands=[
     {
-      img: "01",
-      title: "01",
+      img: "porcelanosa",
+      title: "porcelanosa",
       link: "#"
     },
     {
-      img: "02",
-      title: "02",
+      img: "krion",
+      title: "krion",
       link: "#"
     },
     {
-      img: "03",
-      title: "03",
+      img: "porcelanosa",
+      title: "porcelanosa",
       link: "#"
     },
     {
-      img: "04",
-      title: "04",
+      img: "krion",
+      title: "krion",
       link: "#"
     },
     {
-      img: "05",
-      title: "05",
+      img: "porcelanosa",
+      title: "porcelanosa",
+      link: "#"
+    },
+    {
+      img: "krion",
+      title: "krion",
+      link: "#"
+    },
+    {
+      img: "porcelanosa",
+      title: "porcelanosa",
+      link: "#"
+    },
+    {
+      img: "krion",
+      title: "krion",
+      link: "#"
+    },
+    {
+      img: "porcelanosa",
+      title: "porcelanosa",
       link: "#"
     },
   ];
@@ -37,14 +57,12 @@ secton.section.brands
       })
       .swiper-container.brands__slider
         .swiper-wrapper
-          each slide in shares
+          each slide in brands
             .swiper-slide.brands__slide
-              .collection-item
-                .brandss__wrapper
-                  a(href=slide.link aria-label=slide.title)
-                    picture
-                      source(srcset="img/new-collections/" + slide.img + ".webp" type="image/webp")
-                      source(srcset="img/new-collections/" + slide.img + ".png" type="image/png")
-                      img.brands__image(src="new-collections/" + slide.img + ".jpg" alt=slide.title)
+              a.brands__item(href=slide.link aria-label=slide.title)
+                picture
+                  source(srcset="/img/brands/" + slide.img + ".webp" type="image/webp")
+                  source(srcset="/img/brands/" + slide.img + ".png" type="image/png")
+                  img.brands__item-image(src="/img/brands/" + slide.img + ".jpg" alt=slide.title)
         .swiper-button-prev.brands__slider-button__prev
         .swiper-button-next.brands__slider-button__next

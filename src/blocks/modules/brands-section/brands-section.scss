@@ -1,0 +1,16 @@
+.brands {
+  &-section {
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 135px;
+
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
+}
