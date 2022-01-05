@@ -57,6 +57,6 @@ section.page-brands
       each slide in brandsList
         a.page-brands__item(href=slide.link aria-label=slide.title)
           picture
-            source(srcset="/img/brands/" + slide.img + ".webp" type="image/webp")
-            source(srcset="/img/brands/" + slide.img + ".png" type="image/png")
-            img.page-brands__item-image(src="/img/brands/" + slide.img + ".jpg" alt=slide.title)
+            source(srcset="img/brands/" + slide.img + ".webp" type="image/webp")
+            source(srcset="img/brands/" + slide.img + ".png" type="image/png")
+            img.page-brands__item-image(src="img/brands/" + slide.img + ".jpg" alt=slide.title)
