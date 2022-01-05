@@ -11,14 +11,16 @@ mixin header-section(data)
     if data.description
       .section-heading__description!=data.description
 
-//-  Пример использования
-//- +header-section({
-//-   title: "Полезные статьи",
-//-   name: "Все статьи",
-//-   tag: "h1",
-//-   link: "page-articles.html",
-//-   description: ""
-//- })
+mixin sales-item(data)
+  .sales-item
+    a(href!=data.link aria-label!=data.title)
+      picture
+        source(srcset="img/new-collections/" + data.img + ".webp" type="image/webp")
+        source(srcset="img/new-collections/" + data.img + ".png" type="image/png")
+        img.sales-item__image(src="img/new-collections/" + data.img + ".jpg" alt!=data.title)
+    .sales-item__wrapper
+      h3.sales-item__title!=data.title
+      button.sales-item__button.btn.btn--white(type="button")!=data.btnText
 
 mixin collection-item(data)
   .collection-item

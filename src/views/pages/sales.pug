@@ -1,0 +1,16 @@
+extends ../layouts/default
+include ../helpers/_mixins
+
+block variables
+  - const title = "Распродажа керамической плитки"
+
+block content
+  include ../../blocks/modules/header/header.pug
+  main.main
+    include ../../blocks/modules/sales-page/sales-page.pug
+    include ../../blocks/modules/seo-block/seo-block.pug
+  include ../../blocks/modules/footer/footer.pug
+
+block scripts
+  script(defer src="./js/vendor.js")
+  script(defer src="./js/main.js")

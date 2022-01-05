@@ -11,6 +11,8 @@ PageList:
     ready: 25
   - file: brands.html
     ready: 25
+  - file: sales.html
+    ready: 25
   - file: brand.html
     ready: 50
   - file: catalog.html
