@@ -1,17 +1,10 @@
 .collection-detail {
   margin-bottom: 40px;
 
-  &__slider {
-    .mySwiper .swiper-slide {
-      width: 25% !important;
-      height: 100%;
-    }
-  }
-
   &__wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    // grid-gap: 20px;
     position: relative;
     overflow: hidden;
 
