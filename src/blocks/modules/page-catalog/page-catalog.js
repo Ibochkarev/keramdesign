@@ -5,8 +5,6 @@ Swiper.use([Mousewheel, Navigation]);
 
 $(".collections-list__slider").each(function(i) {
   $(this).addClass('collections-list__slider-' + i);
-  // $(".swiper-button-next", $(this)).addClass('swiper-button-next-' + i);
-  // $(".swiper-button-prev", $(this)).addClass('swiper-button-prev-' + i);
 
   let collectionListSlider = new Swiper('.collections-list__slider-' + i, {
     // Optional parameters
