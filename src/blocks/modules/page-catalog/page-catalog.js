@@ -1,30 +1,33 @@
 import {Swiper, Mousewheel, Navigation} from "swiper";
+import $ from "jquery";
 
 Swiper.use([Mousewheel, Navigation]);
 
-$(document).ready(function() {
-  $(".collections-list__slider .swiper-container").each(function(i) {
-    var mySwiper = new Swiper($(this)[0], {
-      // Navigation arrows
-      nextButton: $(".collections-list__slider .swiper-button-next")[i],
-      prevButton: $(".collections-list__slider .swiper-button-prev")[i],
+$(".collections-list__slider").each(function(i) {
+  $(this).addClass('collections-list__slider-' + i);
 
-      // Optional parameters
-      slidesPerView: 1,
-      spaceBetween: 30,
-      watchOverflow: true,
-      grabCursor: true,
-      breakpoints: {
-        574: {
-          slidesPerView: 2
-        },
-        992: {
-          slidesPerView: 3
-        },
-        1200: {
-          slidesPerView: 4
-        }
+  let collectionListSlider = new Swiper('.collections-list__slider-' + i, {
+    // Optional parameters
+    slidesPerView: 1,
+    spaceBetween: 30,
+    watchOverflow: true,
+    grabCursor: true,
+    observer: true, 
+    observeParents: true,
+    navigation: {
+      nextEl: ".collections-list__slider-" + i +  " .swiper-button-next",
+      prevEl: ".collections-list__slider-" + i +  " .swiper-button-prev",
+    },
+    breakpoints: {
+      574: {
+        slidesPerView: 2
       },
-    });
+      992: {
+        slidesPerView: 3
+      },
+      1200: {
+        slidesPerView: 4
+      }
+    },
   });
 });

@@ -14,8 +14,8 @@ let mainSlider = new Swiper(".main-slider__wrapper", {
         clickable: true,
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.main-slider__wrapper .swiper-button-next',
+      prevEl: '.main-slider__wrapper .swiper-button-prev',
     },
     grabCursor: true,
 });
