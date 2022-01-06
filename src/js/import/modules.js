@@ -7,3 +7,4 @@ import "%modules%/collections-product/collections-product";
 import "%modules%/page-catalog/page-catalog";
 import "%modules%/company-shares/company-shares";
 import "%modules%/brands-section/brands-section";
+import "%modules%/collection-detail/collection-detail";

@@ -11,6 +11,12 @@ mixin header-section(data)
     if data.description
       .section-heading__description!=data.description
 
+mixin header-section-back(data)
+  header.section-heading
+    .section-heading__wrapper
+      a.section-heading__link(href!=data.link aria-label!=data.name)
+        span!=data.name
+
 mixin sales-item(data)
   .sales-item
     a(href!=data.link aria-label!=data.title)
