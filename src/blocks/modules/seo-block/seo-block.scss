@@ -5,27 +5,37 @@
     display: flex;
     margin-right: -10px;
     margin-left: -10px;
+    border-top: 3px solid $a-color-black;
   }
 
   &__left {
-    flex: 0 0 25%;
-    max-width: 25%;
-    margin-left: 8.33333%;
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding-left: 110px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 991px) {
       max-width: 100%;
       flex: 0 0 100%;
-      margin-left: 0;
+      padding-left: 0;
     }
   }
 
   &__right {
-    flex: 0 0 66.66667%;
-    max-width: 66.66667%;
+    flex: 0 0 60%;
+    max-width: 60%;
 
-    @media (max-width: 768px) {
+    @media (max-width: 991px) {
       max-width: 100%;
       flex: 0 0 100%;
+    }
+  }
+
+  &__content {
+    font-size: 16px;
+    line-height: 19px;
+
+    p {
+      margin-top: 0;
     }
   }
 }

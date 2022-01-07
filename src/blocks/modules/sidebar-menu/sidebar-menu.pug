@@ -2,38 +2,38 @@
   const nav=[
     {
       title: "О компании",
-      img: "",
-      link: "#",
+      img: "01",
+      link: "about.html",
     },
     {
       title: "Гарантия и сервис",
-      img: "",
+      img: "02",
       link: "#",
     },
     {
       title: "Доставка",
-      img: "",
+      img: "03",
       link: "#",
     },
     {
       title: "Оплата",
-      img: "",
+      img: "04",
       link: "#",
     },
     {
       title: "Оптовикам",
-      img: "",
+      img: "04",
       link: "#",
     },
     {
       title: "Контакты",
-      img: "",
-      link: "#",
+      img: "04",
+      link: "contacts.html",
     },
     {
       title: "Полезные статьи",
-      img: "",
-      link: "#",
+      img: "04",
+      link: "articles.html",
     },
   ];
 
@@ -41,5 +41,5 @@ nav.page__sidebar
   each item in nav
     li.page__sidebar-item
       a.page__sidebar-link(href=item.link aria-label=item.title)
-        img(src=item.image, alt=item.title)
+        img(src="img/menu/" + item.img + ".svg",, alt=item.title)
         span=item.title

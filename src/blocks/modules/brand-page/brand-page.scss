@@ -1,13 +1,23 @@
 .page-brand {
+  margin-bottom: 40px;
+
   &__wrapper {
     display: flex;
   }
 
   &__logo {
     &-wrap {
+      img {
+        max-width: 235px;
+      }
     }
   }
 
   &__info {
+  }
+
+  &__description {
+    font-size: 20px;
+    line-height: 1.5;
   }
 }

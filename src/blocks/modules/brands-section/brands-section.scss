@@ -1,5 +1,7 @@
 .brands {
-  &-section {
+  &__wrapper {
+    padding: 25px 0 35px;
+    border-top: 3px solid $a-color-black;
   }
 
   &__item {
