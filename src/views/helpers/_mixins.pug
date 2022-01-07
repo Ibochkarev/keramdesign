@@ -46,31 +46,33 @@ mixin collection-item(data)
       .collection-item__country!=data.country
 
 mixin collection-item-full(data)
-  .collection-item.collection-item--full
-    .collection-item__wrapper
+  .collection-item--full
+    .collection-item--full__wrapper
       a(href!=data.link aria-label!=data.title)
         picture
           source(srcset="img/new-collections/" + data.img + ".webp" type="image/webp")
           source(srcset="img/new-collections/" + data.img + ".png" type="image/png")
-          img.collection-item__image(src="img/new-collections/" + data.img + ".jpg" alt!=data.title)
+          img.collection-item--full__image(src="img/new-collections/" + data.img + ".jpg" alt!=data.title)
       if data.label
-        .collection-item__label!=data.label
-    .collection-item__wrap
-      .collection-item__info
-        .collection-item__headline
-          h3.collection-item__title!=data.title
-          .collection-item__amount!=data.amount
-        .collection-item__description!=data.description
-        .collection-item__info
-          .collection-item__brand!=data.brand
-          .collection-item__country!=data.country
-      .collection-item__price-block
-        span от
-        |
-        | 12180 ₽
-        |
-        | /м
-        sup 2
+        .collection-item--full__label!=data.label
+    .collection-item--full__wrap
+      .collection-item--full__info
+        .collection-item--full__headline
+          h3.collection-item--full__title!=data.title
+          .collection-item--full__amount!=data.amount
+        .collection-item--full__description!=data.description
+        .collection-item--full__addinfo
+          .collection-item--full__brand!=data.brand
+          .collection-item--full__country!=data.country
+      .collection-item--full__price-block
+        .collection-item--full__price
+          span от
+          |
+          | 12 180 ₽
+          |
+          |
+          span /м
+            sup 2
 
 mixin article-card(data)
   .article-item

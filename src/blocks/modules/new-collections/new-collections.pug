@@ -35,7 +35,7 @@ secton.section.new-collections
       +header-section({
         title: "Новинки коллекций 2022",
         name: "Все коллекции",
-        link: "#"
+        link: "collections.html"
       })
       .swiper-container.new-collections__slider
         .swiper-wrapper
@@ -50,8 +50,6 @@ secton.section.new-collections
                       img.collection-item__image(src="new-collections/" + slide.img + ".jpg" alt=slide.title)
                   - if (slide.label !== '')
                     .collection-item__label=slide.label
-                  - else
-                    .collection-item__label._hide
                 .collection-item__headline
                   h3.collection-item__title=slide.title
                   .collection-item__amount=slide.amount

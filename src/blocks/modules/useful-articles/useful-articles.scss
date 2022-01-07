@@ -13,3 +13,16 @@
     }
   }
 }
+
+.article-item {
+  &__info {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+}

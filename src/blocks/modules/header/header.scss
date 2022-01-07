@@ -1,7 +1,7 @@
 .header {
   &__top {
-    background-color: $a-color-black;
     padding: 10px 0;
+    background-color: $a-color-black;
 
     &-wrapper {
       display: flex;
@@ -16,11 +16,14 @@
 
       &__item {
         &:not(:last-child) {
-          margin-right: 10px;
+          margin-right: 32px;
         }
       }
 
       &__link {
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 13px;
+        font-weight: 500;
         color: $a-color-white;
       }
     }

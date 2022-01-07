@@ -7,14 +7,94 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: $a-color-black;
+    height: 30px;
+    padding-right: 13px;
+    padding-left: 13px;
+    font-weight: 600;
+    line-height: 30px;
     color: $a-color-white;
-    padding: 5px 10px;
+    background-color: $a-color-black;
   }
 
   &__image {
+    margin-bottom: 22px;
     object-fit: cover;
-    margin-bottom: 20px;
+  }
+
+  &__headline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+
+  &__info {
+    display: flex;
+    font-size: 13px;
+    line-height: 1.38;
+    color: $a-color-gray;
+    align-content: center;
+  }
+
+  &__title {
+    margin-right: 5px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+
+  &__amount {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+
+  &__brand {
+    margin-right: 15px;
+  }
+
+  &__country {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: -8px;
+      width: 1px;
+      height: 10px;
+      transform: translateY(-50%);
+      content: "";
+      background-color: $a-color-gray;
+    }
+  }
+}
+
+.collection-item--full {
+  &__wrapper {
+    position: relative;
+  }
+
+  &__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    padding-right: 13px;
+    padding-left: 13px;
+    font-weight: 600;
+    line-height: 30px;
+    color: $a-color-white;
+    background-color: $a-color-black;
+  }
+
+  &__image {
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
   }
 
   &__headline {
@@ -24,7 +104,79 @@
   }
 
   &__info {
+    width: 75%;
+    margin-bottom: 10px;
+    padding-right: 50px;
+  }
+
+  &__price {
     display: flex;
+    align-items: flex-end;
+    font-family: $bold_font;
+    font-size: 36px;
+
+    &-block {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+      width: 25%;
+      padding-top: 5px;
+    }
+
+    span {
+      display: block;
+      margin-bottom: -5px;
+      margin-left: 5px;
+      font-family: $primary_font;
+      font-size: 13px;
+      font-weight: 300;
+    }
+  }
+
+  &__title {
+    margin-right: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+
+  &__amount {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+
+  &__description {
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 1.47;
+    color: $a-color-gray;
+  }
+
+  &__addinfo {
+    display: flex;
+    font-size: 13px;
+    line-height: 1.38;
+    color: $a-color-gray;
     align-content: center;
+  }
+
+  &__brand {
+    margin-right: 15px;
+  }
+
+  &__country {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: -8px;
+      width: 1px;
+      height: 10px;
+      transform: translateY(-50%);
+      content: "";
+      background-color: $a-color-gray;
+    }
   }
 }

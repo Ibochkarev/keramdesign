@@ -172,7 +172,7 @@ img {
 
   &--h1 {
     margin-bottom: 40px;
-    font-family: $primary_font;
+    font-family: $bold_font;
     font-size: 58px;
     line-height: 120%;
     text-transform: uppercase;
@@ -205,9 +205,9 @@ img {
   &--h2 {
     position: relative;
     margin-bottom: 20px;
-    font-family: $primary_font;
-    font-size: 30px;
-    line-height: 120%;
+    font-family: $bold_font;
+    font-size: 36px;
+    line-height: 128%;
     text-transform: uppercase;
     color: $a-color-black;
     transform: translateX(0);
@@ -303,10 +303,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 40px;
+  min-width: 197px;
   padding: 10px;
-  font-size: 24px;
+  font-size: 15px;
   font-weight: 600;
-  line-height: 1.14;
+  line-height: 1.47;
   text-align: center;
   color: $a-color-white;
   border: 1px solid $a-color-black;
@@ -329,9 +331,9 @@ img {
   }
 
   &--white {
+    color: $a-color-black;
     border: 1px solid $a-color-white;
     background-color: $a-color-white;
-    color: $a-color-black;
 
     &:hover {
       color: $a-color-white;
@@ -394,13 +396,37 @@ img {
   }
 
   &__sidebar {
-    grid-area: side;
     margin-left: 0.5rem;
+    grid-area: side;
   }
 
   &__content {
     grid-area: content;
   }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 38px;
+  height: 38px;
+  color: $a-color-white;
+  opacity: 1;
+  background-color: $a-color-black;
+
+  &.swiper-button-disabled {
+    display: none;
+  }
+
+  &::after {
+    font-size: 20px;
+  }
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+.swiper-button-next {
+  right: 0;
 }
 
 @keyframes show {
