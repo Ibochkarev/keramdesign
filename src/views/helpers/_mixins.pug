@@ -8,6 +8,7 @@ mixin header-section(data)
       if data.link
         a.section-heading__link(href!=data.link aria-label!=data.name)
           span!=data.name
+          +svgMono("arrow-right")
     if data.description
       .section-heading__description!=data.description
 
@@ -16,6 +17,7 @@ mixin header-section-back(data)
     .section-heading__wrapper
       a.section-heading__link(href!=data.link aria-label!=data.name)
         span!=data.name
+        +svgMono("arrow-right")
 
 mixin sales-item(data)
   .sales-item
