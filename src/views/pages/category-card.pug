@@ -1,0 +1,92 @@
+extends ../layouts/default
+include ../helpers/_mixins
+
+block variables
+  - const title = "Полезные статьи"
+
+block content
+  include ../../blocks/modules/page-category/page-category-data.pug
+  include ../../blocks/modules/header/header.pug
+  main.main
+    .page-category
+      .page__container.l-default
+        include ../../blocks/modules/category-filters/category-filters.pug
+
+        .page__content
+          #mse2_mfilter.page-category.msearch2
+            +header-section-back({
+              name: "Плитка для ванной",
+              link: "collections.html"
+            })
+            +header-section({
+              title: "Плитка для ванной",
+              tag: "h1"
+            })
+            .page-category__wrapper
+              .page-category__wrapper-left
+                #mse2_selected_wrapper
+                  #mse2_selected
+                    strong Категория:
+                    a.mse2_selected_link(href='#' data-id='')
+                      em Показывать только в наличии
+                      sup x
+                    strong Теги:
+                    a.mse2_selected_link(href='#' data-id='')
+                      em Размер 15 см
+                      sup x
+              .page-category__wrapper-right
+                select#mse2_sort.selectpicker
+                  option.sort(data-sort='price' value='asc') Сначала дешевые
+                  option.sort(data-sort='price' value='desc') Сначала дорогие
+                #mse2_tpl.page-category__tpls
+                  a.page-category__tpls-item(href='#' data-tpl='0' class='{$tpl0}')
+                    +svgMono("ic-catalog")
+                  a.page-category__tpls-item(href='#' data-tpl='1' class='{$tpl1}')
+                    +svgMono("ic-catalog-2")
+                  a.page-category__tpls-item(href='#' data-tpl='2' class='{$tpl2}')
+                    +svgMono("ic-catalog-3")
+
+            #mse2_results.page-category__list
+              each item in categoryList
+                .product-item(itemtype='http://schema.org/Product' itemscope='')
+                  meta(itemprop='description' content='')
+                  meta(itemprop='name' content='')
+                  form.product-item__wrapper(method='post')
+                    input(type='hidden' name='id' value='')
+                    input(type='hidden' name='count' value='1')
+                    input(type='hidden' name='options' value='[]')
+                    a.product-item__image-wrap(href=item.link aria-label=item.title)
+                      picture
+                        source(srcset="img/products/" + item.img + ".webp" type="image/webp")
+                        source(srcset="img/products/" + item.img + ".png" type="image/png")
+                        img.product-item__image(src="img/products/" + item.img + ".jpg" alt=item.title)
+                    - if (item.label)
+                      .product-item__badge=item.label
+                    .product-item__info(itemtype='http://schema.org/AggregateOffer' itemprop='offers' itemscope='')
+                      meta(itemprop='category' content='')
+                      meta(itemprop='name' content='')
+                      meta(itemprop='offerCount' content='')
+                      meta(itemprop='price' content='')
+                      meta(itemprop='lowPrice' content='')
+                      meta(itemprop='priceCurrency' content='RUR')
+                      .product-item__info-top
+                        h3.product-item__title=item.title
+                      .product-item__info-bottom
+                        .product-item__price-block
+                          .product-item__price-old 920 ₽
+                          .product-item__price
+                            | 1 180 ₽
+                            span / м
+                              sup 2
+                        button.product-item__btn(type='submit' name='ms2_action' value='cart/add')
+                          +svgMono("ic-cart")
+
+            .mse2_pagination
+              .page-category__btn-wrap
+                button.btn.btn--black(type="button", aria-label="Показать еще") Показать еще
+    include ../../blocks/modules/seo-block/seo-block.pug
+  include ../../blocks/modules/footer/footer.pug
+
+block scripts
+  script(defer src="./js/vendor.js")
+  script(defer src="./js/main.js")

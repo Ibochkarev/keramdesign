@@ -1,7 +1,7 @@
-.page__sidebar {
+.sidebar-menu {
   list-style: none;
 
-  &-item {
+  &__item {
     padding: 6px 0;
 
     &:not(:last-child) {
@@ -11,7 +11,7 @@
     &.active {
       background-color: $a-color-black;
 
-      .page__sidebar-link {
+      .sidebar-menu__link {
         background-color: $a-color-black;
         border-color: $a-color-white;
         border-radius: 6px;
@@ -19,7 +19,7 @@
     }
   }
 
-  &-link {
+  &__link {
     color: $a-color-gray;
     display: flex;
     align-items: center;

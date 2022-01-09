@@ -1,0 +1,124 @@
+.page-category {
+  &__list {
+    display: grid;
+    margin-bottom: 45px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+
+    @media (max-width: 1199px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 15px;
+    }
+
+    @media (max-width: 991px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+    }
+
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+    }
+
+    @media (max-width: 574px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    @media (max-width: 1199px) {
+      justify-content: flex-start;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    &-left {
+      @media (max-width: 1199px) {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+
+    &-right {
+      display: flex;
+      justify-content: flex-end;
+
+      @media (max-width: 1199px) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__btn {
+    &-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 45px;
+    }
+  }
+
+  #mse2_selected {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    strong {
+      display: none;
+    }
+
+    .mse2_selected_link {
+      display: flex;
+      align-items: center;
+      height: 38px;
+      padding-right: 15px;
+      padding-left: 15px;
+      font-size: 15px;
+      font-weight: 700;
+      border: 1px solid #e4e4e4;
+      flex-direction: row-reverse;
+
+      &:not(:last-child) {
+        margin-right: 13px;
+      }
+
+      em {
+        font-style: normal;
+      }
+
+      sup {
+        top: 0;
+        margin-right: 10px;
+        font-size: 15px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__tpls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 13px;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 38px;
+      border: 1px solid #e4e4e4;
+
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+}

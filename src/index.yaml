@@ -17,6 +17,8 @@ PageList:
     ready: 50
   - file: catalog.html
     ready: 50
+  - file: category-card.html
+    ready: 10
   - file: articles.html
     ready: 50
   - file: 404.html

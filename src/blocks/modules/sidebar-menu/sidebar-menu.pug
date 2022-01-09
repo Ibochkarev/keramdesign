@@ -37,9 +37,10 @@
     },
   ];
 
-nav.page__sidebar
-  each item in nav
-    li.page__sidebar-item
-      a.page__sidebar-link(href=item.link aria-label=item.title)
-        img(src="img/menu/" + item.img + ".svg",, alt=item.title)
-        span=item.title
+.page__sidebar
+  nav.sidebar-menu
+    each item in nav
+      li.sidebar-menu__item
+        a.sidebar-menu__link(href=item.link aria-label=item.title)
+          img(src="img/menu/" + item.img + ".svg",, alt=item.title)
+          span=item.title

@@ -1,0 +1,23 @@
+-
+  const categoryMenu=[
+    {
+      title: "Новинки плитки",
+      img: "01",
+      link: "#",
+    },
+    {
+      title: "Популярная плитка",
+      img: "02",
+      link: "#",
+    },
+  ];
+
+.page__sidebar
+  form#mse2_filters(action='{$_modx->resource.id | url}' method='post')
+    .page-category__filters
+      .page-category__menu
+        each item in categoryMenu
+          li.sidebar-menu__item
+            a.sidebar-menu__link(href=item.link aria-label=item.title)
+              img(src="img/menu/" + item.img + ".svg",, alt=item.title)
+              span=item.title

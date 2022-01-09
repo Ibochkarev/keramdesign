@@ -1293,6 +1293,24 @@ img {
   fill: #fff;
 }
 
+.ico-mono-ic-catalog-2 {
+  width: 1.06em;
+  height: 1em;
+  fill: #22201E;
+}
+
+.ico-mono-ic-catalog-3 {
+  width: 1em;
+  height: 1em;
+  fill: #fff;
+}
+
+.ico-mono-ic-catalog {
+  width: 1.06em;
+  height: 1em;
+  fill: #22201E;
+}
+
 .loader {
   position: fixed;
   z-index: 11;
@@ -1775,29 +1793,29 @@ img {
   margin: auto;
 }
 
-.page__sidebar {
+.sidebar-menu {
   list-style: none;
 }
 
-.page__sidebar-item {
+.sidebar-menu__item {
   padding: 6px 0;
 }
 
-.page__sidebar-item:not(:last-child) {
+.sidebar-menu__item:not(:last-child) {
   border-bottom: 1px solid #e4e4e4;
 }
 
-.page__sidebar-item.active {
+.sidebar-menu__item.active {
   background-color: #1c1c1c;
 }
 
-.page__sidebar-item.active .page__sidebar-link {
+.sidebar-menu__item.active .sidebar-menu__link {
   background-color: #1c1c1c;
   border-color: #ffffff;
   border-radius: 6px;
 }
 
-.page__sidebar-link {
+.sidebar-menu__link {
   color: #969696;
   display: flex;
   align-items: center;
@@ -1810,12 +1828,12 @@ img {
   margin: 0 12px;
 }
 
-.page__sidebar-link:hover {
+.sidebar-menu__link:hover {
   border-radius: 6px;
   background-color: #f7f7f7;
 }
 
-.page__sidebar-link img {
+.sidebar-menu__link img {
   margin-right: 10px;
   width: 18px;
   height: 18px;
@@ -1975,6 +1993,7 @@ img {
 }
 
 .product-item {
+  position: relative;
   border: 1px solid;
   transition: all 0.5s ease;
   background-color: #ffffff;
@@ -2007,7 +2026,6 @@ img {
 }
 
 .product-item__info {
-  position: relative;
   display: flex;
   justify-content: space-between;
   min-height: 140px;
@@ -2056,6 +2074,90 @@ img {
   font-size: 13px;
 }
 
+.page-category__list {
+  display: grid;
+  margin-bottom: 45px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.page-category__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.page-category__wrapper-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.page-category__btn-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+
+.page-category #mse2_selected {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.page-category #mse2_selected strong {
+  display: none;
+}
+
+.page-category #mse2_selected .mse2_selected_link {
+  display: flex;
+  align-items: center;
+  height: 38px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 15px;
+  font-weight: 700;
+  border: 1px solid #e4e4e4;
+  flex-direction: row-reverse;
+}
+
+.page-category #mse2_selected .mse2_selected_link:not(:last-child) {
+  margin-right: 13px;
+}
+
+.page-category #mse2_selected .mse2_selected_link em {
+  font-style: normal;
+}
+
+.page-category #mse2_selected .mse2_selected_link sup {
+  top: 0;
+  margin-right: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.page-category__tpls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 13px;
+}
+
+.page-category__tpls-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 38px;
+  border: 1px solid #e4e4e4;
+}
+
+.page-category__tpls-item svg {
+  width: 18px;
+  height: 18px;
+}
+
 @media (min-width: 575px) {
   .product-item__btn {
     display: none;
@@ -2097,6 +2199,26 @@ img {
 @media (max-width: 1199px) {
   .page-articles__list {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .page-category__list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+  }
+
+  .page-category__wrapper {
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .page-category__wrapper-left {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .page-category__wrapper-right {
+    width: 100%;
   }
 }
 
@@ -2146,6 +2268,11 @@ img {
   .collection-detail__col {
     width: 100%;
   }
+
+  .page-category__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2172,6 +2299,11 @@ img {
   }
 
   .page-brands__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+  .page-category__list {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
   }
@@ -2223,6 +2355,11 @@ img {
 
   .sales-block__list {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .page-category__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
   }
 }
 

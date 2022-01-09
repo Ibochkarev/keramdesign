@@ -2,4 +2,10 @@
     <path fill-rule="evenodd" clip-rule="evenodd" d="M9.776 4L8 5.88 13.769 12 8 18.12 9.776 20l7.557-8-7.557-8z"/>
 </symbol><symbol id="ico-mono-ic-cart" viewBox="0 0 15 16">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 12.5c-.825 0-1.493.675-1.493 1.5s.668 1.5 1.493 1.5c.825 0 1.5-.675 1.5-1.5s-.675-1.5-1.5-1.5zM0 .5V2h1.5l2.7 5.692L3.187 9.53a1.45 1.45 0 00-.187.72c0 .825.675 1.5 1.5 1.5h9v-1.5H4.815a.186.186 0 01-.188-.188l.023-.09.675-1.222h5.587c.563 0 1.058-.307 1.313-.772L14.91 3.11A.752.752 0 0014.25 2H3.158L2.453.5H0zm12 12c-.825 0-1.492.675-1.492 1.5s.667 1.5 1.492 1.5 1.5-.675 1.5-1.5-.675-1.5-1.5-1.5z"/>
+</symbol><symbol id="ico-mono-ic-catalog-2" viewBox="0 0 19 18">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.127 10.5h3v-3h-3v3zm0 3.75h3v-3h-3v3zm0-7.5h3v-3h-3v3zm3.75 3.75h9v-3h-9v3zm0 3.75h9v-3h-9v3zm0-10.5v3h9v-3h-9z"/>
+</symbol><symbol id="ico-mono-ic-catalog-3" viewBox="0 0 18 18">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.625 8.625h3.75v-4.5h-3.75v4.5zm0 5.25h3.75v-4.5h-3.75v4.5zm4.5 0h3.75v-4.5h-3.75v4.5zm4.5 0h3.75v-4.5h-3.75v4.5zm-4.5-5.25h3.75v-4.5h-3.75v4.5zm4.5-4.5v4.5h3.75v-4.5h-3.75z"/>
+</symbol><symbol id="ico-mono-ic-catalog" viewBox="0 0 19 18">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.628 10.5h12.75v-3H2.628v3zm0 3.75h12.75v-3H2.628v3zm0-10.5v3h12.75v-3H2.628z"/>
 </symbol></svg>
