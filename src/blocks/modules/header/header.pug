@@ -47,18 +47,46 @@ header.header
       .header__top-wrapper
         nav.header__socials
           each social in socials
-            li.header__socials-item
-              a.header__socials-link(href=social.link, aria-label=social.label)
-                img(src=social.img, alt=social.label)
+            a.header__socials-item(href=social.link, aria-label=social.label)
+              +svgMono(social.img)
         nav.header__top-menu
           each item in topMenu
-            li.header__top-menu__item
-              a.header__top-menu__link(href=item.link, aria-label=item.label)=item.label
-
+            a.header__top-menu__item(href=item.link, aria-label=item.label)=item.label
   .header__bottom
     .l-default
       .header__bottom-wrapper
-        .header__logo logo
-        .header__search search
-        .header__phone phone
-        .header__info info
+        .shadow.hidden
+        .header__mobile
+        .header__logo 
+          img(src="img/svg/logo.svg", alt="")
+        .header__search 
+          form(action="") 
+            input(type="text" placeholder="Поиск по > 5000 видов плитки")
+            a.header__search-btn(href="") 
+              +svgMono('search')
+        a.header__phone(href="tel:+74950039767")
+          .header__phone-label заказать звонок
+          .header__phone-number +7 495 003 97 67
+        .header__icons
+          a.header__icon(href="") 
+            .header__icon-count 4
+            .header__icon-img 
+              +svgMono('basket')
+          a.header__icon(href="") 
+            .header__icon-count 2
+            .header__icon-img 
+              +svgMono('graph')
+          a.header__icon(href="") 
+            .header__icon-count
+            .header__icon-img 
+              +svgMono('heart')
+          a.header__icon(href="") 
+            .header__icon-count
+            .header__icon-img 
+              +svgMono('user')
+        .header__bottom-mobile 
+          .header__burger   
+            .header__burger-spans
+              span
+              span
+              span
