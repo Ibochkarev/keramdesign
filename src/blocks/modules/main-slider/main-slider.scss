@@ -3,7 +3,11 @@
   position: relative;
 
   &__item {
-    height: 450px;
+    min-height: 420px;
+
+    @media (max-width: 991px) {
+      min-height: auto;
+    }
 
     &-wrapper {
       position: relative;
@@ -21,11 +25,28 @@
     &-info {
       z-index: 1;
       position: relative;
-      width: 60%;
+      width: 50%;
       height: 100%;
-      padding: 35px 150px 60px;
+      padding: 35px 60px 60px 150px;
       color: $a-color-white;
       background: rgba(34, 32, 30, 0.8);
+
+      @media (max-width: 1336px) {
+        padding: 35px 50px 50px 90px;
+      }
+
+      @media (max-width: 1200px) {
+        width: 60%;
+      }
+
+      @media (max-width: 991px) {
+        padding: 35px;
+      }
+
+      @media (max-width: 767px) {
+        width: 70%;
+        padding: 15px;
+      }
     }
 
     &-title {
@@ -35,7 +56,12 @@
       font-weight: 700;
       line-height: 1.02;
       text-transform: uppercase;
-      letter-spacing: 0.075px;
+
+      @media (max-width: 767px) {
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 1.43;
+      }
     }
 
     &-text {
@@ -44,10 +70,56 @@
       font-size: 20px;
       font-weight: 300;
       line-height: 1.5;
+
+      @media (max-width: 767px) {
+        margin-bottom: 10px;
+        font-size: 10px;
+        line-height: 1.67;
+      }
     }
 
     &-btn {
       max-width: max-content;
+      min-width: 100px;
+      margin-bottom: 25px;
     }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .swiper-pagination {
+    &-bullets {
+      bottom: 24px;
+      left: 150px;
+      text-align: left;
+
+      @media (max-width: 1336px) {
+        left: 90px;
+      }
+
+      @media (max-width: 991px) {
+        left: 35px;
+      }
+
+      @media (max-width: 767px) {
+        bottom: 14px;
+        left: 15px;
+      }
+    }
+  }
+}
+
+.swiper-pagination {
+  &-bullet {
+    width: 28px;
+    height: 4px;
+    margin: 0 0 0 10px;
+    border-radius: 0;
+    background-color: $a-color-white;
   }
 }
