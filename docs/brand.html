@@ -30,17 +30,18 @@
       <div class="header__top">
         <div class="l-default">
           <div class="header__top-wrapper">
-            <nav class="header__socials">
-              <li class="header__socials-item"><a class="header__socials-link" href="#" aria-label="Twitter"><img src="twitter" alt="Twitter"></a></li>
-              <li class="header__socials-item"><a class="header__socials-link" href="#" aria-label="Instagram"><img src="instagram" alt="Instagram"></a></li>
-              <li class="header__socials-item"><a class="header__socials-link" href="#" aria-label="Facebook"><img src="facebook" alt="Facebook"></a></li>
+            <nav class="header__socials"><a class="header__socials-item" href="#" aria-label="Twitter">
+                <svg class="ico ico-mono-twitter">
+                  <use xlink:href="img/sprite-mono.svg#ico-mono-twitter"></use>
+                </svg></a><a class="header__socials-item" href="#" aria-label="Instagram">
+                <svg class="ico ico-mono-instagram">
+                  <use xlink:href="img/sprite-mono.svg#ico-mono-instagram"></use>
+                </svg></a><a class="header__socials-item" href="#" aria-label="Facebook">
+                <svg class="ico ico-mono-facebook">
+                  <use xlink:href="img/sprite-mono.svg#ico-mono-facebook"></use>
+                </svg></a>
             </nav>
-            <nav class="header__top-menu">
-              <li class="header__top-menu__item"><a class="header__top-menu__link" href="#" aria-label="Как купить?">Как купить?</a></li>
-              <li class="header__top-menu__item"><a class="header__top-menu__link" href="#" aria-label="Доставка и самовывоз">Доставка и самовывоз</a></li>
-              <li class="header__top-menu__item"><a class="header__top-menu__link" href="#" aria-label="Возврат">Возврат</a></li>
-              <li class="header__top-menu__item"><a class="header__top-menu__link" href="#" aria-label="Шоурум">Шоурум</a></li>
-              <li class="header__top-menu__item"><a class="header__top-menu__link" href="#" aria-label="Контакты">Контакты</a></li>
+            <nav class="header__top-menu"><a class="header__top-menu__item" href="#" aria-label="Как купить?">Как купить?</a><a class="header__top-menu__item" href="#" aria-label="Доставка и самовывоз">Доставка и самовывоз</a><a class="header__top-menu__item" href="#" aria-label="Возврат">Возврат</a><a class="header__top-menu__item" href="#" aria-label="Шоурум">Шоурум</a><a class="header__top-menu__item" href="#" aria-label="Контакты">Контакты</a>
             </nav>
           </div>
         </div>
@@ -48,10 +49,49 @@
       <div class="header__bottom">
         <div class="l-default">
           <div class="header__bottom-wrapper">
-            <div class="header__logo">logo</div>
-            <div class="header__search">search</div>
-            <div class="header__phone">phone</div>
-            <div class="header__info">info</div>
+            <div class="shadow hidden"></div>
+            <div class="header__mobile"></div>
+            <div class="header__logo"> <img src="img/svg/logo.svg" alt=""></div>
+            <div class="header__search"> 
+              <form action=""> 
+                <input type="text" placeholder="Поиск по &gt; 5000 видов плитки"><a class="header__search-btn" href=""> 
+                  <svg class="ico ico-mono-search">
+                    <use xlink:href="img/sprite-mono.svg#ico-mono-search"></use>
+                  </svg></a>
+              </form>
+            </div><a class="header__phone" href="tel:+74950039767">
+              <div class="header__phone-label">заказать звонок</div>
+              <div class="header__phone-number">+7 495 003 97 67</div></a>
+            <div class="header__icons"><a class="header__icon" href=""> 
+                <div class="header__icon-count">4</div>
+                <div class="header__icon-img"> 
+                  <svg class="ico ico-mono-basket">
+                    <use xlink:href="img/sprite-mono.svg#ico-mono-basket"></use>
+                  </svg>
+                </div></a><a class="header__icon" href=""> 
+                <div class="header__icon-count">2</div>
+                <div class="header__icon-img"> 
+                  <svg class="ico ico-mono-graph">
+                    <use xlink:href="img/sprite-mono.svg#ico-mono-graph"></use>
+                  </svg>
+                </div></a><a class="header__icon" href=""> 
+                <div class="header__icon-count"></div>
+                <div class="header__icon-img"> 
+                  <svg class="ico ico-mono-heart">
+                    <use xlink:href="img/sprite-mono.svg#ico-mono-heart"></use>
+                  </svg>
+                </div></a><a class="header__icon" href=""> 
+                <div class="header__icon-count"></div>
+                <div class="header__icon-img"> 
+                  <svg class="ico ico-mono-user">
+                    <use xlink:href="img/sprite-mono.svg#ico-mono-user"></use>
+                  </svg>
+                </div></a></div>
+            <div class="header__bottom-mobile"> 
+              <div class="header__burger">  
+                <div class="header__burger-spans"><span></span><span></span><span></span></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
