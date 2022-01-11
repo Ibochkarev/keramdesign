@@ -1,1 +1,140 @@
+-
+  const menuInfo=[
+    {
+      title: "О магазине",
+      link: "about.html",
+    },
+    {
+      title: "Шоурум",
+      link: "#",
+    },
+    {
+      title: "Как купить?",
+      link: "#",
+    },
+    {
+      title: "Доставка и самовывоз",
+      link: "#",
+    },
+    {
+      title: "Оптовикам",
+      link: "#",
+    },
+    {
+      title: "Оптовикам",
+      link: "#",
+    },
+    {
+      title: "О плитке",
+      link: "#",
+    },
+  ];
+
+-
+  const menuCatalog=[
+    {
+      title: "Плитка для ванной",
+      link: "#",
+    },
+    {
+      title: "Плитка на кухню",
+      link: "#",
+    },
+    {
+      title: "Плитка в коридор",
+      link: "#",
+    },
+    {
+      title: "Мозаика",
+      link: "#",
+    },
+    {
+      title: "Клинкер и ступени",
+      link: "#",
+    },
+  ];
+
+-
+  const menuFactories=[
+    {
+      title: "Испанская плитка",
+      link: "#",
+    },
+    {
+      title: "Итальянская плитка",
+      link: "#",
+    },
+    {
+      title: "Российская плитка",
+      link: "#",
+    },
+  ];
+
+-
+  const menuCabinet=[
+    {
+      title: "Войти",
+      link: "#",
+    },
+    {
+      title: "История заказов",
+      link: "#",
+    },
+    {
+      title: "Настройки",
+      link: "#",
+    },
+    {
+      title: "Корзина",
+      link: "#",
+    },
+  ];
+
 footer.footer
+  .footer__wrapper
+    .l-default
+      .footer-top
+        .footer-top__wrapper
+          .footer-top__col
+            .footer__title Информация
+            nav.footer__menu(itemscope, itemtype="http://schema.org/SiteNavigationElement")
+              ul.footer__menu-list(itemprop="about", itemscope, itemtype="http://schema.org/ItemList")
+                each item in menuInfo
+                  li.footer__menu-item(itemprop="itemListElement", itemscope, itemtype="http://schema.org/ItemList")
+                    a.footer__menu-link(href=item.link, aria-label=item.title, itemprop="url")=item.title
+                    meta(itemprop="name", content=item.title)
+          .footer-top__col
+            .footer__title Каталог
+            nav.footer__menu(itemscope, itemtype="http://schema.org/SiteNavigationElement")
+              ul.footer__menu-list(itemprop="about", itemscope, itemtype="http://schema.org/ItemList")
+                each item in menuCatalog
+                  li.footer__menu-item(itemprop="itemListElement", itemscope, itemtype="http://schema.org/ItemList")
+                    a.footer__menu-link(href=item.link, aria-label=item.title, itemprop="url")=item.title
+                    meta(itemprop="name", content=item.title)
+          .footer-top__col
+            .footer__title Фабрики
+            nav.footer__menu(itemscope, itemtype="http://schema.org/SiteNavigationElement")
+              ul.footer__menu-list(itemprop="about", itemscope, itemtype="http://schema.org/ItemList")
+                each item in menuFactories
+                  li.footer__menu-item(itemprop="itemListElement", itemscope, itemtype="http://schema.org/ItemList")
+                    a.footer__menu-link(href=item.link, aria-label=item.title, itemprop="url")=item.title
+                    meta(itemprop="name", content=item.title)
+          .footer-top__col
+            .footer__title Кабинет
+            nav.footer__menu(itemscope, itemtype="http://schema.org/SiteNavigationElement")
+              ul.footer__menu-list(itemprop="about", itemscope, itemtype="http://schema.org/ItemList")
+                each item in menuCabinet
+                  li.footer__menu-item(itemprop="itemListElement", itemscope, itemtype="http://schema.org/ItemList")
+                    a.footer__menu-link(href=item.link, aria-label=item.title, itemprop="url")=item.title
+                    meta(itemprop="name", content=item.title)
+          .footer-top__col
+            .footer__title Связаться с нами
+      .footer-bottom
+        .footer-bottom__wrapper
+          .footer-bottom__col
+            .footer__copyrite © 2021 ООО «СТРОЙ-МАГ»
+          .footer-bottom__col
+            a.footer__policy(href="#") Политика конфиденциальности
+          .footer-bottom__col
+            a.footer__created(href="https://bakin.ru" rel="nofollow")
+              +svgMono("bakin")
