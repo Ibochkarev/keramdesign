@@ -2815,6 +2815,31 @@ img {
   margin-bottom: 8px;
 }
 
+.success-order {
+  margin: 130px 0;
+}
+
+.success-order__wrapper {
+  height: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.success-order__title {
+  margin-bottom: 30px;
+}
+
+.success-order__text {
+  margin-bottom: 70px;
+}
+
+.success-order__btn {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+}
+
 @media (min-width: 575px) {
   .product-item__btn {
     display: none;

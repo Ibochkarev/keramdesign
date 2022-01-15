@@ -1,0 +1,26 @@
+extends ../layouts/default
+include ../helpers/_mixins
+
+block variables
+  - const title = "Страница успешного заказа"
+
+block content
+  include ../../blocks/modules/header/header.pug
+  main.main
+    section.success-order
+      .l-default
+        .success-order__wrapper
+          h1.success-order__title.title--h1 Ваш заказ
+            |
+            |
+            span #378_214
+            br
+            |
+            | оформлен
+          .success-order__text О смене статуса заказа вы будете получать уведомления по почте
+          a.success-order__btn.btn(href="history.html") История заказов
+  include ../../blocks/modules/footer/footer.pug
+
+block scripts
+  script(defer src="./js/vendor.js")
+  script(defer src="./js/main.js")
