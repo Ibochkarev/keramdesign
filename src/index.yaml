@@ -18,9 +18,11 @@ PageList:
   - file: catalog.html
     ready: 50
   - file: category-card.html
-    ready: 10
+    ready: 50
   - file: category-table.html
-    ready: 10
+    ready: 50
+  - file: category-string.html
+    ready: 50
   - file: articles.html
     ready: 50
   - file: 404.html
