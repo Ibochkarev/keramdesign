@@ -2951,6 +2951,23 @@ img {
   line-height: 22px;
 }
 
+.page-contacts__item {
+  max-width: 565px;
+  margin-bottom: 30px;
+  font-size: 15px;
+  line-height: 22px;
+  color: #545454;
+}
+
+.page-contacts__map {
+  margin-bottom: 80px;
+}
+
+.page-contacts__map iframe {
+  width: 100%;
+  height: 520px;
+}
+
 @media (min-width: 575px) {
   .product-item__btn {
     display: none;

@@ -29,6 +29,8 @@ PageList:
     ready: 1
   - file: profile-history.html
     ready: 1
+  - file: contacts.html
+    ready: 50
   - file: information.html
     ready: 75
   - file: 404.html

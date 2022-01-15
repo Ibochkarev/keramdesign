@@ -37,7 +37,7 @@
     },
     {
       label: "Контакты",
-      link: "#",
+      link: "contacts.html",
     },
   ];
 
@@ -57,35 +57,35 @@ header.header
       .header__bottom-wrapper
         .shadow.hidden
         .header__mobile
-        .header__logo 
+        .header__logo
           img(src="img/svg/logo.svg", alt="")
-        .header__search 
-          form(action="") 
+        .header__search
+          form(action="")
             input(type="text" placeholder="Поиск по > 5000 видов плитки")
-            a.header__search-btn(href="") 
+            a.header__search-btn(href="")
               +svgMono('search')
         a.header__phone(href="tel:+74950039767")
           .header__phone-label заказать звонок
           .header__phone-number +7 495 003 97 67
         .header__icons
-          a.header__icon(href="") 
+          a.header__icon(href="")
             .header__icon-count 4
-            .header__icon-img 
+            .header__icon-img
               +svgMono('basket')
-          a.header__icon(href="") 
+          a.header__icon(href="")
             .header__icon-count 2
-            .header__icon-img 
+            .header__icon-img
               +svgMono('graph')
-          a.header__icon(href="") 
+          a.header__icon(href="")
             .header__icon-count
-            .header__icon-img 
+            .header__icon-img
               +svgMono('heart')
-          a.header__icon(href="") 
+          a.header__icon(href="")
             .header__icon-count
-            .header__icon-img 
+            .header__icon-img
               +svgMono('user')
-        .header__bottom-mobile 
-          .header__burger   
+        .header__bottom-mobile
+          .header__burger
             .header__burger-spans
               span
               span
