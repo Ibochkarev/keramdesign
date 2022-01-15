@@ -54,10 +54,14 @@ section.collection-detail
             .collection-detail__share
               span Поделиться
               .collection-detail__share-list
-                a(href="" rel="nofollow" aria-label="Facebook" target="_blank")
-                a(href="" rel="nofollow" aria-label="Google" target="_blank")
-                a(href="" rel="nofollow" aria-label="Twitter" target="_blank")
+                a.collection-detail__share-link(href="" rel="nofollow" aria-label="Facebook" target="_blank")
+                  +svgMono('share-facebook')
+                a.collection-detail__share-link(href="" rel="nofollow" aria-label="Google" target="_blank")
+                  +svgMono('share-google')
+                a.collection-detail__share-link(href="" rel="nofollow" aria-label="Twitter" target="_blank")
+                  +svgMono('share-twitter')
             .collection-detail__buttons
-              a.collection-detail__info-favorite.btn(href="")
+              a.collection-detail__btn.collection-detail__btn-favorite(href="")
                 span В избранное
-              button.btn.btn--black(type="button") Нашли дешевле?
+                +svgMono('heart')
+              button.collection-detail__btn(type="button") Нашли дешевле?

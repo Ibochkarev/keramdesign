@@ -1385,6 +1385,24 @@ img {
   fill: #1C1C1C;
 }
 
+.ico-mono-share-facebook {
+  width: 1em;
+  height: 1em;
+  fill: #22201E;
+}
+
+.ico-mono-share-google {
+  width: 1.02em;
+  height: 1em;
+  fill: #969696;
+}
+
+.ico-mono-share-twitter {
+  width: 1.02em;
+  height: 1em;
+  fill: #22201E;
+}
+
 .ico-mono-twitter {
   width: 1em;
   height: 1em;
@@ -2321,12 +2339,15 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .collection-detail__headline-brand {
   display: flex;
   align-items: center;
+  font-size: 13px;
+  line-height: 1.38;
+  color: #969696;
 }
 
 .collection-detail__headline-brand span {
@@ -2337,10 +2358,16 @@ img {
   max-height: 35px;
 }
 
+.collection-detail__headline-country {
+  font-size: 13px;
+  line-height: 1.38;
+  color: #969696;
+}
+
 .collection-detail__description {
   font-size: 15px;
   line-height: 1.47;
-  color: #969696;
+  color: #545454;
 }
 
 .collection-detail__col {
@@ -2350,6 +2377,7 @@ img {
 .collection-detail__info-wrap {
   display: flex;
   justify-content: space-between;
+  height: 100%;
   flex-direction: column;
 }
 
@@ -2357,15 +2385,77 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.collection-detail__info-favorite {
-  width: 250px;
+.collection-detail__btn {
+  cursor: pointer;
+  width: 100%;
+  height: 38px;
+  min-width: 173px;
+  padding: 7px 12px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  background: #eaebec;
+  border: 1px solid #e4e4e4;
+  transition: 0.5s opacity ease;
+  white-space: nowrap;
+}
+
+.collection-detail__btn:hover {
+  opacity: 0.8;
+}
+
+.collection-detail__btn-favorite {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.collection-detail__share {
+  display: flex;
+  align-items: center;
+}
+
+.collection-detail__share-list {
+  display: flex;
+  align-items: center;
+}
+
+.collection-detail__share-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.collection-detail__share-link svg {
+  width: 40px;
+  height: 40px;
+}
+
+.collection-detail__share span {
+  display: block;
+  margin-right: 10px;
+  font-size: 13px;
+  line-height: 1.38;
+  color: #969696;
 }
 
 .collection-detail__buttons {
   display: flex;
   align-items: center;
+}
+
+.collection-detail .mySwiper .swiper-slide {
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.collection-detail .mySwiper .swiper-slide.swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.collection-detail .mySwiper2 {
+  margin-bottom: 27px;
 }
 
 .product-item {
@@ -2956,6 +3046,10 @@ img {
 
   .collection-detail__wrapper {
     flex-wrap: wrap;
+  }
+
+  .collection-detail__slider {
+    margin-bottom: 25px;
   }
 
   .collection-detail__col {

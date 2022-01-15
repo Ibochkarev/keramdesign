@@ -148,10 +148,22 @@
                 </div>
                 <div class="collection-detail__info-bottom">
                   <div class="collection-detail__share"><span>Поделиться</span>
-                    <div class="collection-detail__share-list"><a href="" rel="nofollow" aria-label="Facebook" target="_blank"></a><a href="" rel="nofollow" aria-label="Google" target="_blank"></a><a href="" rel="nofollow" aria-label="Twitter" target="_blank"></a></div>
+                    <div class="collection-detail__share-list"><a class="collection-detail__share-link" href="" rel="nofollow" aria-label="Facebook" target="_blank">
+                        <svg class="ico ico-mono-share-facebook">
+                          <use xlink:href="img/sprite-mono.svg#ico-mono-share-facebook"></use>
+                        </svg></a><a class="collection-detail__share-link" href="" rel="nofollow" aria-label="Google" target="_blank">
+                        <svg class="ico ico-mono-share-google">
+                          <use xlink:href="img/sprite-mono.svg#ico-mono-share-google"></use>
+                        </svg></a><a class="collection-detail__share-link" href="" rel="nofollow" aria-label="Twitter" target="_blank">
+                        <svg class="ico ico-mono-share-twitter">
+                          <use xlink:href="img/sprite-mono.svg#ico-mono-share-twitter"></use>
+                        </svg></a></div>
                   </div>
-                  <div class="collection-detail__buttons"><a class="collection-detail__info-favorite btn" href=""><span>В избранное</span></a>
-                    <button class="btn btn--black" type="button">Нашли дешевле?</button>
+                  <div class="collection-detail__buttons"><a class="collection-detail__btn collection-detail__btn-favorite" href=""><span>В избранное</span>
+                      <svg class="ico ico-mono-heart">
+                        <use xlink:href="img/sprite-mono.svg#ico-mono-heart"></use>
+                      </svg></a>
+                    <button class="collection-detail__btn" type="button">Нашли дешевле?</button>
                   </div>
                 </div>
               </div>
@@ -159,6 +171,326 @@
           </div>
         </div>
       </section>
+      <secton class="section new-collections">
+        <div class="l-default">
+          <div class="section__wrapper">
+            <div class="page-category__wrapper">
+              <div class="page-category__wrapper-left">
+                <h2 class="title--h2">Товары в коллекции Lush</h2>
+              </div>
+              <div class="page-category__wrapper-right">
+                <select class="selectpicker" id="mse2_sort">
+                  <option class="sort" data-sort="price" value="asc">Сначала дешевые</option>
+                  <option class="sort" data-sort="price" value="desc">Сначала дорогие</option>
+                </select>
+                <div class="page-category__tpls" id="mse2_tpl"><a class="page-category__tpls-item {$tpl0}" href="#" data-tpl="0">
+                    <svg class="ico ico-mono-ic-catalog">
+                      <use xlink:href="img/sprite-mono.svg#ico-mono-ic-catalog"></use>
+                    </svg></a><a class="page-category__tpls-item {$tpl1}" href="#" data-tpl="1">
+                    <svg class="ico ico-mono-ic-catalog-2">
+                      <use xlink:href="img/sprite-mono.svg#ico-mono-ic-catalog-2"></use>
+                    </svg></a><a class="page-category__tpls-item {$tpl2}" href="#" data-tpl="2">
+                    <svg class="ico ico-mono-ic-catalog-3">
+                      <use xlink:href="img/sprite-mono.svg#ico-mono-ic-catalog-3"></use>
+                    </svg></a></div>
+              </div>
+            </div>
+            <div class="page-category__list" id="mse2_results">
+              <div class="product-item" itemtype="http://schema.org/Product" itemscope="">
+                <meta itemprop="description" content="">
+                <meta itemprop="name" content="">
+                <form class="product-item__wrapper" method="post">
+                  <input type="hidden" name="id" value="">
+                  <input type="hidden" name="count" value="1">
+                  <input type="hidden" name="options" value="[]"><a class="product-item__image-wrap" href="product.html" aria-label="Напольная плитка 3301 OTTAGONETTA NERO MATT 15*15">
+                    <picture>
+                      <source srcset="img/products/01.webp" type="image/webp">
+                      <source srcset="img/products/01.png" type="image/png"><img class="product-item__image" src="img/products/01.jpg" alt="Напольная плитка 3301 OTTAGONETTA NERO MATT 15*15">
+                    </picture></a>
+                  <div class="product-item__badge">Акция</div>
+                  <div class="product-item__info" itemtype="http://schema.org/AggregateOffer" itemprop="offers" itemscope="">
+                    <meta itemprop="category" content="">
+                    <meta itemprop="name" content="">
+                    <meta itemprop="offerCount" content="">
+                    <meta itemprop="price" content="">
+                    <meta itemprop="lowPrice" content="">
+                    <meta itemprop="priceCurrency" content="RUR">
+                    <div class="product-item__info-top">
+                      <h3 class="product-item__title">Напольная плитка 3301 OTTAGONETTA NERO MATT 15*15</h3>
+                    </div>
+                    <div class="product-item__info-bottom">
+                      <div class="product-item__price-block">
+                        <div class="product-item__price-old">920 ₽</div>
+                        <div class="product-item__price">1 180 ₽<span>/ м<sup>2</sup></span></div>
+                      </div>
+                      <button class="product-item__btn" type="submit" name="ms2_action" value="cart/add">
+                        <svg class="ico ico-mono-ic-cart">
+                          <use xlink:href="img/sprite-mono.svg#ico-mono-ic-cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="product-item" itemtype="http://schema.org/Product" itemscope="">
+                <meta itemprop="description" content="">
+                <meta itemprop="name" content="">
+                <form class="product-item__wrapper" method="post">
+                  <input type="hidden" name="id" value="">
+                  <input type="hidden" name="count" value="1">
+                  <input type="hidden" name="options" value="[]"><a class="product-item__image-wrap" href="product.html" aria-label="Напольная плитка 3301 OTTAGONETTA NERO MATT 15*15">
+                    <picture>
+                      <source srcset="img/products/02.webp" type="image/webp">
+                      <source srcset="img/products/02.png" type="image/png"><img class="product-item__image" src="img/products/02.jpg" alt="Напольная плитка 3301 OTTAGONETTA NERO MATT 15*15">
+                    </picture></a>
+                  <div class="product-item__badge">Акция</div>
+                  <div class="product-item__info" itemtype="http://schema.org/AggregateOffer" itemprop="offers" itemscope="">
+                    <meta itemprop="category" content="">
+                    <meta itemprop="name" content="">
+                    <meta itemprop="offerCount" content="">
+                    <meta itemprop="price" content="">
+                    <meta itemprop="lowPrice" content="">
+                    <meta itemprop="priceCurrency" content="RUR">
+                    <div class="product-item__info-top">
+                      <h3 class="product-item__title">Напольная плитка 3301 OTTAGONETTA NERO MATT 15*15</h3>
+                    </div>
+                    <div class="product-item__info-bottom">
+                      <div class="product-item__price-block">
+                        <div class="product-item__price-old">920 ₽</div>
+                        <div class="product-item__price">1 180 ₽<span>/ м<sup>2</sup></span></div>
+                      </div>
+                      <button class="product-item__btn" type="submit" name="ms2_action" value="cart/add">
+                        <svg class="ico ico-mono-ic-cart">
+                          <use xlink:href="img/sprite-mono.svg#ico-mono-ic-cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="product-item" itemtype="http://schema.org/Product" itemscope="">
+                <meta itemprop="description" content="">
+                <meta itemprop="name" content="">
+                <form class="product-item__wrapper" method="post">
+                  <input type="hidden" name="id" value="">
+                  <input type="hidden" name="count" value="1">
+                  <input type="hidden" name="options" value="[]"><a class="product-item__image-wrap" href="product.html" aria-label="Керамогранит BREMEN RIEMCHEN UNGESPALTEN (из 3-х шт) BIEGE 24,5x7">
+                    <picture>
+                      <source srcset="img/products/01.webp" type="image/webp">
+                      <source srcset="img/products/01.png" type="image/png"><img class="product-item__image" src="img/products/01.jpg" alt="Керамогранит BREMEN RIEMCHEN UNGESPALTEN (из 3-х шт) BIEGE 24,5x7">
+                    </picture></a>
+                  <div class="product-item__info" itemtype="http://schema.org/AggregateOffer" itemprop="offers" itemscope="">
+                    <meta itemprop="category" content="">
+                    <meta itemprop="name" content="">
+                    <meta itemprop="offerCount" content="">
+                    <meta itemprop="price" content="">
+                    <meta itemprop="lowPrice" content="">
+                    <meta itemprop="priceCurrency" content="RUR">
+                    <div class="product-item__info-top">
+                      <h3 class="product-item__title">Керамогранит BREMEN RIEMCHEN UNGESPALTEN (из 3-х шт) BIEGE 24,5x7</h3>
+                    </div>
+                    <div class="product-item__info-bottom">
+                      <div class="product-item__price-block">
+                        <div class="product-item__price-old">920 ₽</div>
+                        <div class="product-item__price">1 180 ₽<span>/ м<sup>2</sup></span></div>
+                      </div>
+                      <button class="product-item__btn" type="submit" name="ms2_action" value="cart/add">
+                        <svg class="ico ico-mono-ic-cart">
+                          <use xlink:href="img/sprite-mono.svg#ico-mono-ic-cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="product-item" itemtype="http://schema.org/Product" itemscope="">
+                <meta itemprop="description" content="">
+                <meta itemprop="name" content="">
+                <form class="product-item__wrapper" method="post">
+                  <input type="hidden" name="id" value="">
+                  <input type="hidden" name="count" value="1">
+                  <input type="hidden" name="options" value="[]"><a class="product-item__image-wrap" href="product.html" aria-label="Напольная плитка 3301 OTTAGONETTA NERO MATT 15*15">
+                    <picture>
+                      <source srcset="img/products/02.webp" type="image/webp">
+                      <source srcset="img/products/02.png" type="image/png"><img class="product-item__image" src="img/products/02.jpg" alt="Напольная плитка 3301 OTTAGONETTA NERO MATT 15*15">
+                    </picture></a>
+                  <div class="product-item__badge">Акция</div>
+                  <div class="product-item__info" itemtype="http://schema.org/AggregateOffer" itemprop="offers" itemscope="">
+                    <meta itemprop="category" content="">
+                    <meta itemprop="name" content="">
+                    <meta itemprop="offerCount" content="">
+                    <meta itemprop="price" content="">
+                    <meta itemprop="lowPrice" content="">
+                    <meta itemprop="priceCurrency" content="RUR">
+                    <div class="product-item__info-top">
+                      <h3 class="product-item__title">Напольная плитка 3301 OTTAGONETTA NERO MATT 15*15</h3>
+                    </div>
+                    <div class="product-item__info-bottom">
+                      <div class="product-item__price-block">
+                        <div class="product-item__price-old">920 ₽</div>
+                        <div class="product-item__price">1 180 ₽<span>/ м<sup>2</sup></span></div>
+                      </div>
+                      <button class="product-item__btn" type="submit" name="ms2_action" value="cart/add">
+                        <svg class="ico ico-mono-ic-cart">
+                          <use xlink:href="img/sprite-mono.svg#ico-mono-ic-cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="product-item" itemtype="http://schema.org/Product" itemscope="">
+                <meta itemprop="description" content="">
+                <meta itemprop="name" content="">
+                <form class="product-item__wrapper" method="post">
+                  <input type="hidden" name="id" value="">
+                  <input type="hidden" name="count" value="1">
+                  <input type="hidden" name="options" value="[]"><a class="product-item__image-wrap" href="product.html" aria-label="Напольная плитка 3301 OTTAGONETTA NERO MATT 15*15">
+                    <picture>
+                      <source srcset="img/products/01.webp" type="image/webp">
+                      <source srcset="img/products/01.png" type="image/png"><img class="product-item__image" src="img/products/01.jpg" alt="Напольная плитка 3301 OTTAGONETTA NERO MATT 15*15">
+                    </picture></a>
+                  <div class="product-item__badge">Акция</div>
+                  <div class="product-item__info" itemtype="http://schema.org/AggregateOffer" itemprop="offers" itemscope="">
+                    <meta itemprop="category" content="">
+                    <meta itemprop="name" content="">
+                    <meta itemprop="offerCount" content="">
+                    <meta itemprop="price" content="">
+                    <meta itemprop="lowPrice" content="">
+                    <meta itemprop="priceCurrency" content="RUR">
+                    <div class="product-item__info-top">
+                      <h3 class="product-item__title">Напольная плитка 3301 OTTAGONETTA NERO MATT 15*15</h3>
+                    </div>
+                    <div class="product-item__info-bottom">
+                      <div class="product-item__price-block">
+                        <div class="product-item__price-old">920 ₽</div>
+                        <div class="product-item__price">1 180 ₽<span>/ м<sup>2</sup></span></div>
+                      </div>
+                      <button class="product-item__btn" type="submit" name="ms2_action" value="cart/add">
+                        <svg class="ico ico-mono-ic-cart">
+                          <use xlink:href="img/sprite-mono.svg#ico-mono-ic-cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="product-item" itemtype="http://schema.org/Product" itemscope="">
+                <meta itemprop="description" content="">
+                <meta itemprop="name" content="">
+                <form class="product-item__wrapper" method="post">
+                  <input type="hidden" name="id" value="">
+                  <input type="hidden" name="count" value="1">
+                  <input type="hidden" name="options" value="[]"><a class="product-item__image-wrap" href="product.html" aria-label="Напольная плитка 3301 OTTAGONETTA NERO MATT 15*15">
+                    <picture>
+                      <source srcset="img/products/01.webp" type="image/webp">
+                      <source srcset="img/products/01.png" type="image/png"><img class="product-item__image" src="img/products/01.jpg" alt="Напольная плитка 3301 OTTAGONETTA NERO MATT 15*15">
+                    </picture></a>
+                  <div class="product-item__badge">Акция</div>
+                  <div class="product-item__info" itemtype="http://schema.org/AggregateOffer" itemprop="offers" itemscope="">
+                    <meta itemprop="category" content="">
+                    <meta itemprop="name" content="">
+                    <meta itemprop="offerCount" content="">
+                    <meta itemprop="price" content="">
+                    <meta itemprop="lowPrice" content="">
+                    <meta itemprop="priceCurrency" content="RUR">
+                    <div class="product-item__info-top">
+                      <h3 class="product-item__title">Напольная плитка 3301 OTTAGONETTA NERO MATT 15*15</h3>
+                    </div>
+                    <div class="product-item__info-bottom">
+                      <div class="product-item__price-block">
+                        <div class="product-item__price-old">920 ₽</div>
+                        <div class="product-item__price">1 180 ₽<span>/ м<sup>2</sup></span></div>
+                      </div>
+                      <button class="product-item__btn" type="submit" name="ms2_action" value="cart/add">
+                        <svg class="ico ico-mono-ic-cart">
+                          <use xlink:href="img/sprite-mono.svg#ico-mono-ic-cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="product-item" itemtype="http://schema.org/Product" itemscope="">
+                <meta itemprop="description" content="">
+                <meta itemprop="name" content="">
+                <form class="product-item__wrapper" method="post">
+                  <input type="hidden" name="id" value="">
+                  <input type="hidden" name="count" value="1">
+                  <input type="hidden" name="options" value="[]"><a class="product-item__image-wrap" href="product.html" aria-label="Напольная плитка 3301 OTTAGONETTA NERO MATT 15*15">
+                    <picture>
+                      <source srcset="img/products/02.webp" type="image/webp">
+                      <source srcset="img/products/02.png" type="image/png"><img class="product-item__image" src="img/products/02.jpg" alt="Напольная плитка 3301 OTTAGONETTA NERO MATT 15*15">
+                    </picture></a>
+                  <div class="product-item__badge">Акция</div>
+                  <div class="product-item__info" itemtype="http://schema.org/AggregateOffer" itemprop="offers" itemscope="">
+                    <meta itemprop="category" content="">
+                    <meta itemprop="name" content="">
+                    <meta itemprop="offerCount" content="">
+                    <meta itemprop="price" content="">
+                    <meta itemprop="lowPrice" content="">
+                    <meta itemprop="priceCurrency" content="RUR">
+                    <div class="product-item__info-top">
+                      <h3 class="product-item__title">Напольная плитка 3301 OTTAGONETTA NERO MATT 15*15</h3>
+                    </div>
+                    <div class="product-item__info-bottom">
+                      <div class="product-item__price-block">
+                        <div class="product-item__price-old">920 ₽</div>
+                        <div class="product-item__price">1 180 ₽<span>/ м<sup>2</sup></span></div>
+                      </div>
+                      <button class="product-item__btn" type="submit" name="ms2_action" value="cart/add">
+                        <svg class="ico ico-mono-ic-cart">
+                          <use xlink:href="img/sprite-mono.svg#ico-mono-ic-cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="product-item" itemtype="http://schema.org/Product" itemscope="">
+                <meta itemprop="description" content="">
+                <meta itemprop="name" content="">
+                <form class="product-item__wrapper" method="post">
+                  <input type="hidden" name="id" value="">
+                  <input type="hidden" name="count" value="1">
+                  <input type="hidden" name="options" value="[]"><a class="product-item__image-wrap" href="product.html" aria-label="Керамогранит BREMEN RIEMCHEN UNGESPALTEN (из 3-х шт) BIEGE 24,5x7">
+                    <picture>
+                      <source srcset="img/products/01.webp" type="image/webp">
+                      <source srcset="img/products/01.png" type="image/png"><img class="product-item__image" src="img/products/01.jpg" alt="Керамогранит BREMEN RIEMCHEN UNGESPALTEN (из 3-х шт) BIEGE 24,5x7">
+                    </picture></a>
+                  <div class="product-item__info" itemtype="http://schema.org/AggregateOffer" itemprop="offers" itemscope="">
+                    <meta itemprop="category" content="">
+                    <meta itemprop="name" content="">
+                    <meta itemprop="offerCount" content="">
+                    <meta itemprop="price" content="">
+                    <meta itemprop="lowPrice" content="">
+                    <meta itemprop="priceCurrency" content="RUR">
+                    <div class="product-item__info-top">
+                      <h3 class="product-item__title">Керамогранит BREMEN RIEMCHEN UNGESPALTEN (из 3-х шт) BIEGE 24,5x7</h3>
+                    </div>
+                    <div class="product-item__info-bottom">
+                      <div class="product-item__price-block">
+                        <div class="product-item__price-old">920 ₽</div>
+                        <div class="product-item__price">1 180 ₽<span>/ м<sup>2</sup></span></div>
+                      </div>
+                      <button class="product-item__btn" type="submit" name="ms2_action" value="cart/add">
+                        <svg class="ico ico-mono-ic-cart">
+                          <use xlink:href="img/sprite-mono.svg#ico-mono-ic-cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="mse2_pagination">
+              <div class="page-category__btn-wrap">
+                <button class="btn btn--black" type="button" aria-label="Показать еще">Показать еще</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </secton>
       <secton class="section brands">
         <div class="l-default">
           <div class="brands__wrapper">
