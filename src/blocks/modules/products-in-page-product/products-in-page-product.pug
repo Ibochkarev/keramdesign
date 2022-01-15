@@ -1,0 +1,86 @@
+-
+  let productsCollectionsList=[
+    {
+      img: "01",
+      title: "Напольная плитка 3301 OTTAGONETTA NERO MATT 15*15",
+      label: "Акция",
+      link: "product.html",
+      price: "920",
+      oldPrice: "1180"
+    },
+    {
+      img: "02",
+      title: "Напольная плитка 3301 OTTAGONETTA NERO MATT 15*15",
+      label: "Акция",
+      link: "product.html",
+      price: "920",
+      oldPrice: "1180"
+    },
+    {
+      img: "01",
+      title: "Керамогранит BREMEN RIEMCHEN UNGESPALTEN (из 3-х шт) BIEGE 24,5x7",
+      label: "",
+      link: "product.html",
+      price: "920",
+      oldPrice: "1180"
+    },
+    {
+      img: "02",
+      title: "Напольная плитка 3301 OTTAGONETTA NERO MATT 15*15",
+      label: "Акция",
+      link: "product.html",
+      price: "920",
+      oldPrice: "1180"
+    },
+    {
+      img: "01",
+      title: "Напольная плитка 3301 OTTAGONETTA NERO MATT 15*15",
+      label: "Акция",
+      link: "product.html",
+      price: "920",
+      oldPrice: "1180"
+    },
+  ];
+
+secton.section.products-collections
+  .l-default
+    .products-collections__wrapper
+      +header-section({
+        title: "Товары из коллекции Tursh",
+        name: "Все коллекции этой фабрики ",
+        link: "collections.html"
+      })
+      .products-collections__list
+        each item in productsCollectionsList
+          .product-item(itemtype='http://schema.org/Product' itemscope='')
+            meta(itemprop='description' content='')
+            meta(itemprop='name' content='')
+            form.product-item__wrapper(method='post')
+              input(type='hidden' name='id' value='')
+              input(type='hidden' name='count' value='1')
+              input(type='hidden' name='options' value='[]')
+              a.product-item__image-wrap(href=item.link aria-label=item.title)
+                picture
+                  source(srcset="img/products/" + item.img + ".webp" type="image/webp")
+                  source(srcset="img/products/" + item.img + ".png" type="image/png")
+                  img.product-item__image(src="img/products/" + item.img + ".jpg" alt=item.title)
+              - if (item.label)
+                .product-item__badge=item.label
+              .product-item__info(itemtype='http://schema.org/AggregateOffer' itemprop='offers' itemscope='')
+                meta(itemprop='category' content='')
+                meta(itemprop='name' content='')
+                meta(itemprop='offerCount' content='')
+                meta(itemprop='price' content='')
+                meta(itemprop='lowPrice' content='')
+                meta(itemprop='priceCurrency' content='RUR')
+                .product-item__info-top
+                  h3.product-item__title=item.title
+                .product-item__info-bottom
+                  .product-item__price-block
+                    .product-item__price-old 920 ₽
+                    .product-item__price
+                      | 1 180 ₽
+                      span / м
+                        sup 2
+                  button.product-item__btn(type='submit' name='ms2_action' value='cart/add')
+                    +svgMono("ic-cart")

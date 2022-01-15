@@ -1,0 +1,95 @@
+-
+  const characteristics=[
+    {
+      title: "Размер (см)",
+      value: "75х75",
+    },
+    {
+      title: "Тип",
+      value: "Напольная плитка",
+    },
+    {
+      title: "Штук в упаковке",
+      value: "металл",
+    },
+    {
+      title: "М2 в упаковке",
+      value: "Р6М5",
+    },
+    {
+      title: "Рисунок",
+      value: "24",
+    },
+    {
+      title: "Поверхность",
+      value: "1",
+    },
+    {
+      title: "Особенность",
+      value: "60",
+    },
+  ];
+
+section.product-detail
+  .l-default
+    +header-section-back({
+      name: "Плитка для ванной",
+      link: "collection.html"
+    })
+    .product-detail__wrapper
+      .product-detail__col
+        .product-detail__slider
+          .swiper-container.mySwiper2
+            .swiper-wrapper
+              .swiper-slide
+                img(src="/img/new-collections/01.jpg")
+              .swiper-slide
+                img(src="/img/new-collections/01.jpg")
+              .swiper-slide
+                img(src="/img/new-collections/01.jpg")
+              .swiper-slide
+                img(src="/img/new-collections/01.jpg")
+              .swiper-slide
+                img(src="/img/new-collections/01.jpg")
+              .swiper-slide
+                img(src="/img/new-collections/01.jpg")
+            .swiper-button-next
+            .swiper-button-prev
+          .swiper-container.mySwiper(thumbsSlider)
+            .swiper-wrapper
+              .swiper-slide
+                img(src="/img/new-collections/01.jpg")
+              .swiper-slide
+                img(src="/img/new-collections/01.jpg")
+              .swiper-slide
+                img(src="/img/new-collections/01.jpg")
+              .swiper-slide
+                img(src="/img/new-collections/01.jpg")
+              .swiper-slide
+                img(src="/img/new-collections/01.jpg")
+              .swiper-slide
+                img(src="/img/new-collections/01.jpg")
+      .product-detail__col
+        .product-detail__info-wrap
+          .product-detail__info
+            .product-detail__article Артикул: km-26998
+            h1.title--h1 Напольная плитка PAV. IBIZA SKY (м2) 75*75
+            .product-detail__headline
+              .product-detail__headline-collection Коллекция: 75x75 (Absolut Keramika, Испания)
+              .product-detail__headline-brand
+                span Фабрика
+                img(src="/img/brands/krion.png", alt="")
+            .product-detail__description
+              p Купить коллекцию Растяжки производителя Bonaparte по выгодным ценам можно оформив заказ в нашем интернет-магазине или в салоне по адресу: МО, г. Мытищи, Ярославское шоссе, д. 118 Б (ТК "Строим Дом").
+            .product-detail__characteristics
+              .product-detail__characteristics-title Характеристики напольной плитки PAV. IBIZA SKY
+              ul.product-detail__characteristics-list
+                each item in characteristics
+                  li
+                    .name=item.title
+                    .value=item.value
+            .product-detail__buttons
+              a.product-detail__btn.product-detail__btn-favorite(href="")
+                +svgMono('graph')
+              a.product-detail__btn.product-detail__btn-favorite(href="")
+                +svgMono('heart')
