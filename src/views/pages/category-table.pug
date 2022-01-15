@@ -1,0 +1,94 @@
+extends ../layouts/default
+include ../helpers/_mixins
+
+block variables
+  - const title = "категория (таблица)"
+
+block content
+  include ../../blocks/modules/page-category/page-category-table-data.pug
+  include ../../blocks/modules/header/header.pug
+  main.main
+    .page-category
+      .page__container.l-default
+        include ../../blocks/modules/category-filters/category-filters.pug
+
+        .page__content
+          #mse2_mfilter.page-category.msearch2
+            +header-section-back({
+              name: "Коллекции плитки для ванной",
+              link: "collections.html"
+            })
+            +header-section({
+              title: "Плитка для ванной",
+              tag: "h1"
+            })
+            .page-category__wrapper
+              .page-category__wrapper-left
+                #mse2_selected_wrapper
+                  #mse2_selected
+                    strong Теги:
+                    a.mse2_selected_link(href='#' data-id='')
+                      em Размер 15 см
+                      sup x
+              .page-category__wrapper-right
+                select#mse2_sort.selectpicker
+                  option.sort(data-sort='price' value='asc') Сначала дешевые
+                  option.sort(data-sort='price' value='desc') Сначала дорогие
+                #mse2_tpl.page-category__tpls
+                  a.page-category__tpls-item(href='#' data-tpl='0' class='{$tpl0}')
+                    +svgMono("ic-catalog")
+                  a.page-category__tpls-item(href='#' data-tpl='1' class='{$tpl1}')
+                    +svgMono("ic-catalog-2")
+                  a.page-category__tpls-item(href='#' data-tpl='2' class='{$tpl2}')
+                    +svgMono("ic-catalog-3")
+
+            #mse2_results.page-category__table
+              each item in categoryListTable
+                .product-table__item(itemtype='http://schema.org/Product' itemscope='')
+                  meta(itemprop='description' content='')
+                  meta(itemprop='name' content='')
+                  form.product-table__item-wrapper(method='post')
+                    input(type='hidden' name='id' value='')
+                    input(type='hidden' name='count' value='1')
+                    input(type='hidden' name='options' value='[]')
+                    a.product-table__item-image(href=item.link aria-label=item.title)
+                      picture
+                        source(srcset="img/products/" + item.img + ".webp" type="image/webp")
+                        source(srcset="img/products/" + item.img + ".png" type="image/png")
+                        img(src="img/products/" + item.img + ".jpg" alt=item.title)
+                    .product-table__item-info(itemtype='http://schema.org/AggregateOffer' itemprop='offers' itemscope='')
+                      meta(itemprop='category' content='')
+                      meta(itemprop='name' content='')
+                      meta(itemprop='offerCount' content='')
+                      meta(itemprop='price' content='')
+                      meta(itemprop='lowPrice' content='')
+                      meta(itemprop='priceCurrency' content='RUR')
+                      a.product-table__item-name(href=item.link aria-label=item.title)
+                        h3.product-table__item-title=item.title
+                      .product-table__item-price__block
+                        .product-table__item-price__top
+                          - if (item.label)
+                            .product-table__item-badge=item.label
+                        .product-table__item-price__bottom
+                          .product-item__price-old 920 ₽
+                          .product-item__price
+                            | 1 180 ₽
+                            span / м
+                              sup 2
+                      .product-table__item-buttons
+                        a.product-table__item-btn(href="")
+                          +svgMono('heart')
+                        a.product-table__item-btn(href="")
+                          +svgMono('graph')
+                        button.product-table__item-btn(type='submit' name='ms2_action' value='cart/add')
+                          +svgMono("basket")
+
+            .mse2_pagination
+              .page-category__btn-wrap
+                button.btn.btn--black(type="button", aria-label="Показать еще") Показать еще
+    include ../../blocks/modules/seo-block/seo-block.pug
+  include ../../blocks/modules/footer/footer.pug
+
+block scripts
+  script(defer src="./js/vendor.js")
+  script(defer src="./js/main.js")
