@@ -1824,6 +1824,11 @@ img {
   height: 100%;
 }
 
+.main-slider__item-wrapper._right {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .main-slider__item-bg {
   z-index: 0;
   position: absolute;

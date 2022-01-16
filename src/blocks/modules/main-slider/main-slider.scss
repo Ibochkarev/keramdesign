@@ -12,6 +12,11 @@
     &-wrapper {
       position: relative;
       height: 100%;
+
+      &._right {
+        display: flex;
+        flex-direction: row-reverse;
+      }
     }
 
     &-bg {
