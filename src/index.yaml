@@ -33,5 +33,7 @@ PageList:
     ready: 50
   - file: information.html
     ready: 75
+  - file: clear.html
+    ready: 75
   - file: 404.html
     ready: 1
