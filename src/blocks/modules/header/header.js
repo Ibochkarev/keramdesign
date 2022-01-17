@@ -12,9 +12,7 @@ let header = $('.header'),
     menu = $('.header__top-menu'),
     socials = $('.header__socials'),
     headerTop = $('.header__top-wrapper'),
-    shadow = $('.shadow');
-
-    console.log(headerHeight)
+    shadow = $('.header .shadow');
 
 burger.on('click', function() {
     burgerFunc();
