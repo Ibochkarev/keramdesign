@@ -42,6 +42,9 @@
   ];
 
 header.header
+  .header__logo-absolute 
+    .header__logo
+      img(src="img/svg/logo-big.svg", alt="")
   .header__top
     .l-default
       .header__top-wrapper
@@ -57,7 +60,7 @@ header.header
       .header__bottom-wrapper
         .shadow.hidden
         .header__mobile
-        .header__logo
+        a.header__logo(href="/")
           img(src="img/svg/logo.svg", alt="")
         .header__search
           form(action="")

@@ -8,4 +8,5 @@ import "%modules%/page-catalog/page-catalog";
 import "%modules%/company-shares/company-shares";
 import "%modules%/brands-section/brands-section";
 import "%modules%/collection-detail/collection-detail";
+import "%modules%/catalog-menu/catalog-menu";
 import "%modules%/product-tabs/product-tabs";
