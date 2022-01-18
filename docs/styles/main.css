@@ -1310,13 +1310,13 @@ img {
 .ico-mono-arrow-left {
   width: 1em;
   height: 1em;
-  fill: #22201E;
+  fill: #22201e;
 }
 
 .ico-mono-arrow-right {
   width: 1em;
   height: 1em;
-  fill: #22201E;
+  fill: #22201e;
 }
 
 .ico-mono-bakin {
@@ -1328,7 +1328,7 @@ img {
 .ico-mono-basket {
   width: 1em;
   height: 1em;
-  fill: #22201E;
+  fill: #22201e;
 }
 
 .ico-mono-facebook {
@@ -1340,13 +1340,13 @@ img {
 .ico-mono-graph {
   width: 1em;
   height: 1em;
-  fill: #22201E;
+  fill: #22201e;
 }
 
 .ico-mono-heart {
   width: 1.07em;
   height: 1em;
-  fill: #22201E;
+  fill: #22201e;
 }
 
 .ico-mono-ic-cart {
@@ -1358,7 +1358,7 @@ img {
 .ico-mono-ic-catalog-2 {
   width: 1.06em;
   height: 1em;
-  fill: #22201E;
+  fill: #22201e;
 }
 
 .ico-mono-ic-catalog-3 {
@@ -1370,7 +1370,7 @@ img {
 .ico-mono-ic-catalog {
   width: 1.06em;
   height: 1em;
-  fill: #22201E;
+  fill: #22201e;
 }
 
 .ico-mono-instagram {
@@ -1382,13 +1382,31 @@ img {
 .ico-mono-search {
   width: 1.06em;
   height: 1em;
-  fill: #1C1C1C;
+  fill: #1c1c1c;
+}
+
+.ico-mono-share-facebook {
+  width: 1em;
+  height: 1em;
+  fill: #22201e;
+}
+
+.ico-mono-share-google {
+  width: 1.02em;
+  height: 1em;
+  fill: #969696;
+}
+
+.ico-mono-share-twitter {
+  width: 1.02em;
+  height: 1em;
+  fill: #22201e;
 }
 
 .ico-mono-star {
   width: 0.95em;
   height: 1em;
-  fill: #22201E;
+  fill: #22201e;
 }
 
 .ico-mono-twitter {
@@ -1400,7 +1418,7 @@ img {
 .ico-mono-user {
   width: 0.82em;
   height: 1em;
-  fill: #22201E;
+  fill: #22201e;
 }
 
 .loader {
@@ -2906,7 +2924,8 @@ img {
     opacity: 1;
     transform: translateY(0);
   }
-=======
+}
+
 .product-table__item {
   margin-bottom: 27px;
 }
