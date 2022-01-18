@@ -104,10 +104,104 @@
           <div class="page__sidebar">
             <form id="mse2_filters" action="{$_modx-&gt;resource.id | url}" method="post">
               <div class="page-category__filters">
-                <div class="page-category__menu">
-                  <li class="sidebar-menu__item"><a class="sidebar-menu__link" href="#" aria-label="Новинки плитки"><img src="img/menu/01.svg"  alt="Новинки плитки"><span>Новинки плитки</span></a></li>
-                  <li class="sidebar-menu__item"><a class="sidebar-menu__link" href="#" aria-label="Популярная плитка"><img src="img/menu/02.svg"  alt="Популярная плитка"><span>Популярная плитка</span></a></li>
+                <div class="page-category__menu"><a class="sidebar-filter__item" href=""> 
+                    <div class="sidebar-filter__item-icon"> <img src="img/svg/star.svg" alt=""></div>
+                    <div class="sidebar-filter__item-title">Новинки плитки</div></a>
+                  <div class="sidebar-filter__item"> 
+                    <div class="sidebar-filter__dropdown"> 
+                      <div class="sidebar-filter__item-icon"> <img src="img/svg/eye.svg" alt=""></div>
+                      <div class="sidebar-filter__dropdown-title">Популярная плитка</div>
+                      <div class="sidebar-filter__dropdown-body">
+                        <div class="sidebar-filter__dropdown-category">Плмика для ванной</div>
+                        <div class="sidebar-filter__dropdown-subcategory">Подкатегория первая</div>
+                        <div class="sidebar-filter__dropdown-subcategory">Вторая подкатегория</div>
+                        <div class="sidebar-filter__dropdown-subcategory">Подкатегория третья</div>
+                        <div class="sidebar-filter__dropdown-subcategory">Четвертая подкатегория</div>
+                      </div>
+                    </div>
+                    <div class="sidebar-filter__dropdown"> 
+                      <div class="sidebar-filter__dropdown-body">
+                        <div class="sidebar-filter__dropdown-category">Плмика на кухню</div>
+                        <div class="sidebar-filter__dropdown-subcategory">Подкатегория первая</div>
+                        <div class="sidebar-filter__dropdown-subcategory">Вторая подкатегория</div>
+                        <div class="sidebar-filter__dropdown-subcategory">Подкатегория третья</div>
+                        <div class="sidebar-filter__dropdown-subcategory">Четвертая подкатегория</div>
+                      </div>
+                    </div>
+                    <div class="sidebar-filter__dropdown"> 
+                      <div class="sidebar-filter__dropdown-body">
+                        <div class="sidebar-filter__dropdown-category">Плитка в корридор</div>
+                        <div class="sidebar-filter__dropdown-subcategory">Подкатегория первая</div>
+                        <div class="sidebar-filter__dropdown-subcategory">Вторая подкатегория</div>
+                        <div class="sidebar-filter__dropdown-subcategory">Подкатегория третья</div>
+                        <div class="sidebar-filter__dropdown-subcategory">Четвертая подкатегория</div>
+                      </div>
+                    </div>
+                    <div class="sidebar-filter__dropdown"> 
+                      <div class="sidebar-filter__dropdown-body">
+                        <div class="sidebar-filter__dropdown-category">Мозаика</div>
+                        <div class="sidebar-filter__dropdown-subcategory">Подкатегория первая</div>
+                        <div class="sidebar-filter__dropdown-subcategory">Вторая подкатегория</div>
+                        <div class="sidebar-filter__dropdown-subcategory">Подкатегория третья</div>
+                        <div class="sidebar-filter__dropdown-subcategory">Четвертая подкатегория</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sidebar-filter__item"> 
+                    <div class="sidebar-filter__show">
+                      <div class="sidebar-filter__show-text">Показавать только в наличии</div>
+                      <input class="sidebar-filter__show-input" type="checkbox">
+                      <div class="sidebar-filter__show-btn"></div>
+                    </div>
+                  </div>
+                  <div class="sidebar-filter__item"> 
+                    <div class="sidebar-filter__item-title">Показавать только в наличии</div>
+                    <div class="sidebar-filter__price"> 
+                      <div class="sidebar-filter__price-range"> </div>
+                      <div class="sidebar-filter__price-inputs"> 
+                        <div class="sidebar-filter__price-min">
+                          <input type="number">
+                        </div>
+                        <div class="sidebar-filter__price-max">
+                          <input type="number">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sidebar-filter__item">
+                    <div class="sidebar-filter__dropdown"> 
+                      <div class="sidebar-filter__dropdown-title">Размер</div>
+                      <div class="sidebar-filter__dropdown-body">
+                        <div class="sidebar-filter__dropdown-category">Мозаика</div>
+                        <input class="sidebar-filter__dropdown-input" type="radio" name="size">
+                        <div class="sidebar-filter__dropdown-btn"></div>
+                        <div class="sidebar-filter__dropdown-subcategory"></div>
+                        <input class="sidebar-filter__dropdown-input" type="radio" name="size">
+                        <div class="sidebar-filter__dropdown-btn"></div>
+                        <div class="sidebar-filter__dropdown-subcategory"></div>
+                        <input class="sidebar-filter__dropdown-input" type="radio" name="size">
+                        <div class="sidebar-filter__dropdown-btn"></div>
+                        <div class="sidebar-filter__dropdown-subcategory"></div>
+                        <input class="sidebar-filter__dropdown-input" type="radio" name="size">
+                        <div class="sidebar-filter__dropdown-btn"></div>
+                        <div class="sidebar-filter__dropdown-subcategory"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sidebar-filter__item">
+                    <div class="sidebar-filter__dropdown"> 
+                      <div class="sidebar-filter__dropdown-title">Бренды</div>
+                    </div>
+                  </div>
+                  <div class="sidebar-filter__item">
+                    <div class="sidebar-filter__dropdown"> 
+                      <div class="sidebar-filter__dropdown-title">Страны (?)</div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="sidebar-filter__marketing">
+                <div class="sidebar-filter__marketing-title">Сезонная распродажа остатков топовой коллекции </div><a class="sidebar-filter__marketing-btn btn btn--white" href="">Адрес на карте</a>
               </div>
             </form>
           </div>
