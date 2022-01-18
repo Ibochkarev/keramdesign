@@ -25,6 +25,8 @@ PageList:
     ready: 50
   - file: articles.html
     ready: 50
+  - file: article.html
+    ready: 50
   - file: profile-history-current.html
     ready: 1
   - file: profile-history.html

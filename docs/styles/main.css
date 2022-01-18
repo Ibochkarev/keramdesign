@@ -2155,6 +2155,10 @@ img {
   line-height: 1.5;
 }
 
+.useful-articles {
+  margin-bottom: 30px;
+}
+
 .useful-articles__wrap {
   padding-top: 25px;
   border-top: 3px solid #1c1c1c;
