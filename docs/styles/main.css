@@ -2195,7 +2195,9 @@ img {
 
 .brands__item img {
   display: block;
+  max-height: 96px;
   margin: auto;
+  width: auto;
 }
 
 .sidebar-menu {
