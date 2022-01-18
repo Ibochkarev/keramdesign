@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Текущие заказы</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="l-default">
+          <div class="header__top-wrapper">
+            <nav class="header__socials"><a class="header__socials-item" href="#" aria-label="Twitter">
+                <svg class="ico ico-mono-twitter">
+                  <use xlink:href="img/sprite-mono.svg#ico-mono-twitter"></use>
+                </svg></a><a class="header__socials-item" href="#" aria-label="Instagram">
+                <svg class="ico ico-mono-instagram">
+                  <use xlink:href="img/sprite-mono.svg#ico-mono-instagram"></use>
+                </svg></a><a class="header__socials-item" href="#" aria-label="Facebook">
+                <svg class="ico ico-mono-facebook">
+                  <use xlink:href="img/sprite-mono.svg#ico-mono-facebook"></use>
+                </svg></a>
+            </nav>
+            <nav class="header__top-menu"><a class="header__top-menu__item" href="#" aria-label="Как купить?">Как купить?</a><a class="header__top-menu__item" href="#" aria-label="Доставка и самовывоз">Доставка и самовывоз</a><a class="header__top-menu__item" href="#" aria-label="Возврат">Возврат</a><a class="header__top-menu__item" href="#" aria-label="Шоурум">Шоурум</a><a class="header__top-menu__item" href="contacts.html" aria-label="Контакты">Контакты</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="l-default">
+          <div class="header__bottom-wrapper">
+            <div class="shadow hidden"></div>
+            <div class="header__mobile"></div>
+            <div class="header__logo"><img src="img/svg/logo.svg" alt=""></div>
+            <div class="header__search">
+              <form action="">
+                <input type="text" placeholder="Поиск по &gt; 5000 видов плитки"><a class="header__search-btn" href="">
+                  <svg class="ico ico-mono-search">
+                    <use xlink:href="img/sprite-mono.svg#ico-mono-search"></use>
+                  </svg></a>
+              </form>
+            </div><a class="header__phone" href="tel:+74950039767">
+              <div class="header__phone-label">заказать звонок</div>
+              <div class="header__phone-number">+7 495 003 97 67</div></a>
+            <div class="header__icons"><a class="header__icon" href="">
+                <div class="header__icon-count">4</div>
+                <div class="header__icon-img">
+                  <svg class="ico ico-mono-basket">
+                    <use xlink:href="img/sprite-mono.svg#ico-mono-basket"></use>
+                  </svg>
+                </div></a><a class="header__icon" href="">
+                <div class="header__icon-count">2</div>
+                <div class="header__icon-img">
+                  <svg class="ico ico-mono-graph">
+                    <use xlink:href="img/sprite-mono.svg#ico-mono-graph"></use>
+                  </svg>
+                </div></a><a class="header__icon" href="">
+                <div class="header__icon-count"></div>
+                <div class="header__icon-img">
+                  <svg class="ico ico-mono-heart">
+                    <use xlink:href="img/sprite-mono.svg#ico-mono-heart"></use>
+                  </svg>
+                </div></a><a class="header__icon" href="">
+                <div class="header__icon-count"></div>
+                <div class="header__icon-img">
+                  <svg class="ico ico-mono-user">
+                    <use xlink:href="img/sprite-mono.svg#ico-mono-user"></use>
+                  </svg>
+                </div></a></div>
+            <div class="header__bottom-mobile">
+              <div class="header__burger">
+                <div class="header__burger-spans"><span></span><span></span><span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="page-account">
+        <div class="page__container l-default">
+          <div class="page__sidebar">
+            <nav class="sidebar-menu">
+              <li class="sidebar-menu__item"><a class="sidebar-menu__link" href="#" aria-label="Избранное"><img src="img/menu/01.svg"  alt="Избранное"><span>Избранное</span></a></li>
+              <li class="sidebar-menu__item"><a class="sidebar-menu__link" href="#" aria-label="Сравнение"><img src="img/menu/02.svg"  alt="Сравнение"><span>Сравнение</span></a></li>
+              <li class="sidebar-menu__item"><a class="sidebar-menu__link" href="profile-history-current.html" aria-label="Текущие заказы"><img src="img/menu/03.svg"  alt="Текущие заказы"><span>Текущие заказы</span></a></li>
+              <li class="sidebar-menu__item"><a class="sidebar-menu__link" href="profile-history.html" aria-label="История заказов"><img src="img/menu/04.svg"  alt="История заказов"><span>История заказов</span></a></li>
+              <li class="sidebar-menu__item"><a class="sidebar-menu__link" href="#" aria-label="Настройки"><img src="img/menu/04.svg"  alt="Настройки"><span>Настройки</span></a></li>
+              <li class="sidebar-menu__item"><a class="sidebar-menu__link" href="#" aria-label="Выйти"><img src="img/menu/04.svg"  alt="Выйти"><span>Выйти</span></a></li>
+            </nav>
+          </div>
+          <div class="page__content">
+            <h1 class="title--h1">Текущие заказы</h1>
+            <div class="orders__list">
+              <div class="order-item"><a class="order-item__header" href="#" data-toggle="collapse" data-target="#history-card-1" aria-expanded="true">
+                  <div class="order-item__headline"><i class="fa fa-chevron-down"></i>
+                    <div class="order-item__headline-info">
+                      <div class="order-item__headline-title">Заказ от 28 ноября</div>
+                      <div class="order-item__headline-number">31757223-0028</div>
+                    </div>
+                  </div>
+                  <div class="order-item__status">Ожидается оплата</div></a>
+                <div class="collapse show" id="history-card-1">
+                  <div class="order-item__body">
+                    <div class="order-item__products">
+                      <div class="order-product__item">
+                        <div class="order-product__item-img"><img src="" alt=""></div>
+                        <div class="order-product__item-info">
+                          <div class="order-product__item-title">Отличный инструмент</div>
+                          <div class="order-product__item-price">1200 ₽</div>
+                        </div>
+                      </div>
+                      <div class="order-product__item">
+                        <div class="order-product__item-img"><img src="" alt=""></div>
+                        <div class="order-product__item-info">
+                          <div class="order-product__item-title">Отличный инструмент</div>
+                          <div class="order-product__item-price">1200 ₽</div>
+                        </div>
+                      </div>
+                      <div class="order-product__item">
+                        <div class="order-product__item-img"><img src="" alt=""></div>
+                        <div class="order-product__item-info">
+                          <div class="order-product__item-title">Отличный инструмент</div>
+                          <div class="order-product__item-price">1200 ₽</div>
+                        </div>
+                      </div>
+                      <div class="order-product__item">
+                        <div class="order-product__item-img"><img src="" alt=""></div>
+                        <div class="order-product__item-info">
+                          <div class="order-product__item-title">Отличный инструмент</div>
+                          <div class="order-product__item-price">1200 ₽</div>
+                        </div>
+                      </div>
+                      <div class="order-product__item">
+                        <div class="order-product__item-img"><img src="" alt=""></div>
+                        <div class="order-product__item-info">
+                          <div class="order-product__item-title">Отличный инструмент</div>
+                          <div class="order-product__item-price">1200 ₽</div>
+                        </div>
+                      </div>
+                      <div class="order-product__item">
+                        <div class="order-product__item-img"><img src="" alt=""></div>
+                        <div class="order-product__item-info">
+                          <div class="order-product__item-title">Отличный инструмент</div>
+                          <div class="order-product__item-price">1200 ₽</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="order-item__info">
+                      <div class="order-item__info-row">
+                        <div class="order-item__info-title">Сумма заказа:</div>
+                        <div class="order-item__info-value">5 947 ₽</div>
+                      </div>
+                      <div class="order-item__info-row">
+                        <div class="order-item__info-title">Скидка:</div>
+                        <div class="order-item__info-value _is-sale">- 229 ₽</div>
+                      </div>
+                      <div class="order-item__info-row">
+                        <div class="order-item__info-title">Доставка:</div>
+                        <div class="order-item__info-value _is-delivery">+ 180 ₽</div>
+                      </div>
+                      <div class="order-item__info-row">
+                        <div class="order-item__info-title">Общее:</div>
+                        <div class="order-item__info-value _is-total">6 018 ₽</div>
+                      </div>
+                      <div class="order-item__info-row">
+                        <div class="order-item__info-title">Счет на оплату:</div><a class="order-item__info-value _is-docs" href="" download>Счет заказа #31757223-0028</a>
+                      </div>
+                      <div class="order-item__info-row">
+                        <div class="order-item__info-title">Закрывающие документы:</div><a class="order-item__info-value _is-docs" href="" download>Счет-фактура#31757223-00</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="order-item"><a class="order-item__header" href="#" data-toggle="collapse" data-target="#history-card-2" aria-expanded="true">
+                  <div class="order-item__headline"><i class="fa fa-chevron-down"></i>
+                    <div class="order-item__headline-info">
+                      <div class="order-item__headline-title">Заказ от 28 ноября</div>
+                      <div class="order-item__headline-number">31757223-0028</div>
+                    </div>
+                  </div>
+                  <div class="order-item__status">Доставлено</div></a>
+                <div class="collapse show" id="history-card-2">
+                  <div class="order-item__body">
+                    <div class="order-item__products">
+                      <div class="order-product__item">
+                        <div class="order-product__item-img"><img src="" alt=""></div>
+                        <div class="order-product__item-info">
+                          <div class="order-product__item-title">Отличный инструмент</div>
+                          <div class="order-product__item-price">1200 ₽</div>
+                        </div>
+                      </div>
+                      <div class="order-product__item">
+                        <div class="order-product__item-img"><img src="" alt=""></div>
+                        <div class="order-product__item-info">
+                          <div class="order-product__item-title">Отличный инструмент</div>
+                          <div class="order-product__item-price">1200 ₽</div>
+                        </div>
+                      </div>
+                      <div class="order-product__item">
+                        <div class="order-product__item-img"><img src="" alt=""></div>
+                        <div class="order-product__item-info">
+                          <div class="order-product__item-title">Отличный инструмент</div>
+                          <div class="order-product__item-price">1200 ₽</div>
+                        </div>
+                      </div>
+                      <div class="order-product__item">
+                        <div class="order-product__item-img"><img src="" alt=""></div>
+                        <div class="order-product__item-info">
+                          <div class="order-product__item-title">Отличный инструмент</div>
+                          <div class="order-product__item-price">1200 ₽</div>
+                        </div>
+                      </div>
+                      <div class="order-product__item">
+                        <div class="order-product__item-img"><img src="" alt=""></div>
+                        <div class="order-product__item-info">
+                          <div class="order-product__item-title">Отличный инструмент</div>
+                          <div class="order-product__item-price">1200 ₽</div>
+                        </div>
+                      </div>
+                      <div class="order-product__item">
+                        <div class="order-product__item-img"><img src="" alt=""></div>
+                        <div class="order-product__item-info">
+                          <div class="order-product__item-title">Отличный инструмент</div>
+                          <div class="order-product__item-price">1200 ₽</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="order-item__info">
+                      <div class="order-item__info-row">
+                        <div class="order-item__info-title">Сумма заказа:</div>
+                        <div class="order-item__info-value">5 947 ₽</div>
+                      </div>
+                      <div class="order-item__info-row">
+                        <div class="order-item__info-title">Скидка:</div>
+                        <div class="order-item__info-value _is-sale">- 229 ₽</div>
+                      </div>
+                      <div class="order-item__info-row">
+                        <div class="order-item__info-title">Доставка:</div>
+                        <div class="order-item__info-value _is-delivery">+ 180 ₽</div>
+                      </div>
+                      <div class="order-item__info-row">
+                        <div class="order-item__info-title">Общее:</div>
+                        <div class="order-item__info-value _is-total">6 018 ₽</div>
+                      </div>
+                      <div class="order-item__info-row">
+                        <div class="order-item__info-title">Счет на оплату:</div><a class="order-item__info-value _is-docs" href="" download>Счет заказа #31757223-0028</a>
+                      </div>
+                      <div class="order-item__info-row">
+                        <div class="order-item__info-title">Закрывающие документы:</div><a class="order-item__info-value _is-docs" href="" download>Счет-фактура#31757223-00</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="order-item"><a class="order-item__header" href="#" data-toggle="collapse" data-target="#history-card-3" aria-expanded="true">
+                  <div class="order-item__headline"><i class="fa fa-chevron-down"></i>
+                    <div class="order-item__headline-info">
+                      <div class="order-item__headline-title">Заказ от 28 ноября</div>
+                      <div class="order-item__headline-number">31757223-0028</div>
+                    </div>
+                  </div>
+                  <div class="order-item__status">Отменен</div></a>
+                <div class="collapse show" id="history-card-3">
+                  <div class="order-item__body">
+                    <div class="order-item__products">
+                      <div class="order-product__item">
+                        <div class="order-product__item-img"><img src="" alt=""></div>
+                        <div class="order-product__item-info">
+                          <div class="order-product__item-title">Отличный инструмент</div>
+                          <div class="order-product__item-price">1200 ₽</div>
+                        </div>
+                      </div>
+                      <div class="order-product__item">
+                        <div class="order-product__item-img"><img src="" alt=""></div>
+                        <div class="order-product__item-info">
+                          <div class="order-product__item-title">Отличный инструмент</div>
+                          <div class="order-product__item-price">1200 ₽</div>
+                        </div>
+                      </div>
+                      <div class="order-product__item">
+                        <div class="order-product__item-img"><img src="" alt=""></div>
+                        <div class="order-product__item-info">
+                          <div class="order-product__item-title">Отличный инструмент</div>
+                          <div class="order-product__item-price">1200 ₽</div>
+                        </div>
+                      </div>
+                      <div class="order-product__item">
+                        <div class="order-product__item-img"><img src="" alt=""></div>
+                        <div class="order-product__item-info">
+                          <div class="order-product__item-title">Отличный инструмент</div>
+                          <div class="order-product__item-price">1200 ₽</div>
+                        </div>
+                      </div>
+                      <div class="order-product__item">
+                        <div class="order-product__item-img"><img src="" alt=""></div>
+                        <div class="order-product__item-info">
+                          <div class="order-product__item-title">Отличный инструмент</div>
+                          <div class="order-product__item-price">1200 ₽</div>
+                        </div>
+                      </div>
+                      <div class="order-product__item">
+                        <div class="order-product__item-img"><img src="" alt=""></div>
+                        <div class="order-product__item-info">
+                          <div class="order-product__item-title">Отличный инструмент</div>
+                          <div class="order-product__item-price">1200 ₽</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="order-item__info">
+                      <div class="order-item__info-row">
+                        <div class="order-item__info-title">Сумма заказа:</div>
+                        <div class="order-item__info-value">5 947 ₽</div>
+                      </div>
+                      <div class="order-item__info-row">
+                        <div class="order-item__info-title">Скидка:</div>
+                        <div class="order-item__info-value _is-sale">- 229 ₽</div>
+                      </div>
+                      <div class="order-item__info-row">
+                        <div class="order-item__info-title">Доставка:</div>
+                        <div class="order-item__info-value _is-delivery">+ 180 ₽</div>
+                      </div>
+                      <div class="order-item__info-row">
+                        <div class="order-item__info-title">Общее:</div>
+                        <div class="order-item__info-value _is-total">6 018 ₽</div>
+                      </div>
+                      <div class="order-item__info-row">
+                        <div class="order-item__info-title">Счет на оплату:</div><a class="order-item__info-value _is-docs" href="" download>Счет заказа #31757223-0028</a>
+                      </div>
+                      <div class="order-item__info-row">
+                        <div class="order-item__info-title">Закрывающие документы:</div><a class="order-item__info-value _is-docs" href="" download>Счет-фактура#31757223-00</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="l-default">
+          <div class="footer-top">
+            <div class="footer-top__wrapper">
+              <div class="footer-top__col">
+                <div class="footer__title">Информация</div>
+                <nav class="footer__menu" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                  <ul class="footer__menu-list" itemprop="about" itemscope itemtype="http://schema.org/ItemList">
+                    <li class="footer__menu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a class="footer__menu-link" href="about.html" aria-label="О магазине" itemprop="url">О магазине</a>
+                      <meta itemprop="name" content="О магазине">
+                    </li>
+                    <li class="footer__menu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a class="footer__menu-link" href="#" aria-label="Шоурум" itemprop="url">Шоурум</a>
+                      <meta itemprop="name" content="Шоурум">
+                    </li>
+                    <li class="footer__menu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a class="footer__menu-link" href="#" aria-label="Как купить?" itemprop="url">Как купить?</a>
+                      <meta itemprop="name" content="Как купить?">
+                    </li>
+                    <li class="footer__menu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a class="footer__menu-link" href="#" aria-label="Доставка и самовывоз" itemprop="url">Доставка и самовывоз</a>
+                      <meta itemprop="name" content="Доставка и самовывоз">
+                    </li>
+                    <li class="footer__menu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a class="footer__menu-link" href="#" aria-label="Оптовикам" itemprop="url">Оптовикам</a>
+                      <meta itemprop="name" content="Оптовикам">
+                    </li>
+                    <li class="footer__menu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a class="footer__menu-link" href="#" aria-label="Оптовикам" itemprop="url">Оптовикам</a>
+                      <meta itemprop="name" content="Оптовикам">
+                    </li>
+                    <li class="footer__menu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a class="footer__menu-link" href="#" aria-label="О плитке" itemprop="url">О плитке</a>
+                      <meta itemprop="name" content="О плитке">
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="footer-top__col">
+                <div class="footer__title">Каталог</div>
+                <nav class="footer__menu" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                  <ul class="footer__menu-list" itemprop="about" itemscope itemtype="http://schema.org/ItemList">
+                    <li class="footer__menu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a class="footer__menu-link" href="#" aria-label="Плитка для ванной" itemprop="url">Плитка для ванной</a>
+                      <meta itemprop="name" content="Плитка для ванной">
+                    </li>
+                    <li class="footer__menu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a class="footer__menu-link" href="#" aria-label="Плитка на кухню" itemprop="url">Плитка на кухню</a>
+                      <meta itemprop="name" content="Плитка на кухню">
+                    </li>
+                    <li class="footer__menu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a class="footer__menu-link" href="#" aria-label="Плитка в коридор" itemprop="url">Плитка в коридор</a>
+                      <meta itemprop="name" content="Плитка в коридор">
+                    </li>
+                    <li class="footer__menu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a class="footer__menu-link" href="#" aria-label="Мозаика" itemprop="url">Мозаика</a>
+                      <meta itemprop="name" content="Мозаика">
+                    </li>
+                    <li class="footer__menu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a class="footer__menu-link" href="#" aria-label="Клинкер и ступени" itemprop="url">Клинкер и ступени</a>
+                      <meta itemprop="name" content="Клинкер и ступени">
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="footer-top__col">
+                <div class="footer__title">Фабрики</div>
+                <nav class="footer__menu" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                  <ul class="footer__menu-list" itemprop="about" itemscope itemtype="http://schema.org/ItemList">
+                    <li class="footer__menu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a class="footer__menu-link" href="#" aria-label="Испанская плитка" itemprop="url">Испанская плитка</a>
+                      <meta itemprop="name" content="Испанская плитка">
+                    </li>
+                    <li class="footer__menu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a class="footer__menu-link" href="#" aria-label="Итальянская плитка" itemprop="url">Итальянская плитка</a>
+                      <meta itemprop="name" content="Итальянская плитка">
+                    </li>
+                    <li class="footer__menu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a class="footer__menu-link" href="#" aria-label="Российская плитка" itemprop="url">Российская плитка</a>
+                      <meta itemprop="name" content="Российская плитка">
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="footer-top__col">
+                <div class="footer__title">Кабинет</div>
+                <nav class="footer__menu" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                  <ul class="footer__menu-list" itemprop="about" itemscope itemtype="http://schema.org/ItemList">
+                    <li class="footer__menu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a class="footer__menu-link" href="#" aria-label="Войти" itemprop="url">Войти</a>
+                      <meta itemprop="name" content="Войти">
+                    </li>
+                    <li class="footer__menu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a class="footer__menu-link" href="#" aria-label="История заказов" itemprop="url">История заказов</a>
+                      <meta itemprop="name" content="История заказов">
+                    </li>
+                    <li class="footer__menu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a class="footer__menu-link" href="#" aria-label="Настройки" itemprop="url">Настройки</a>
+                      <meta itemprop="name" content="Настройки">
+                    </li>
+                    <li class="footer__menu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a class="footer__menu-link" href="#" aria-label="Корзина" itemprop="url">Корзина</a>
+                      <meta itemprop="name" content="Корзина">
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="footer-top__col">
+                <div class="footer__title">Связаться с нами</div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-bottom__wrapper">
+              <div class="footer-bottom__col">
+                <div class="footer__copyrite">© 2021 ООО «СТРОЙ-МАГ»</div>
+              </div>
+              <div class="footer-bottom__col"><a class="footer__policy" href="#">Политика конфиденциальности</a></div>
+              <div class="footer-bottom__col"><a class="footer__created" href="https://bakin.ru" rel="nofollow">
+                  <svg class="ico ico-mono-bakin">
+                    <use xlink:href="img/sprite-mono.svg#ico-mono-bakin"></use>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script defer src="./js/vendor.js"></script>
+    <script defer src="./js/main.js"></script>
+  </body>
+</html>

@@ -7,7 +7,7 @@
       brand: "Xlight",
       country: "Испания",
       label: "Остатки",
-      link: "#",
+      link: "collection.html",
     },
     {
       img: "02",
@@ -16,7 +16,7 @@
       brand: "Xlight",
       country: "Испания",
       label: "Новинка",
-      link: "#",
+      link: "collection.html",
     },
     {
       img: "03",
@@ -25,7 +25,7 @@
       brand: "Xlight",
       country: "Испания",
       label: "",
-      link: "#",
+      link: "collection.html",
     },
   ];
 
@@ -47,7 +47,7 @@ secton.section.new-collections
                     picture
                       source(srcset="img/new-collections/" + slide.img + ".webp" type="image/webp")
                       source(srcset="img/new-collections/" + slide.img + ".png" type="image/png")
-                      img.collection-item__image(src="new-collections/" + slide.img + ".jpg" alt=slide.title)
+                      img.collection-item__image(src="img/new-collections/" + slide.img + ".jpg" alt=slide.title)
                   - if (slide.label !== '')
                     .collection-item__label=slide.label
                 .collection-item__headline

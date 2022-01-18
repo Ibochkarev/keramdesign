@@ -1,0 +1,41 @@
+-
+  const navProfile=[
+    {
+      title: "Избранное",
+      img: "01",
+      link: "#",
+    },
+    {
+      title: "Сравнение",
+      img: "02",
+      link: "#",
+    },
+    {
+      title: "Текущие заказы",
+      img: "03",
+      link: "profile-history-current.html",
+    },
+    {
+      title: "История заказов",
+      img: "04",
+      link: "profile-history.html",
+    },
+    {
+      title: "Настройки",
+      img: "04",
+      link: "#",
+    },
+    {
+      title: "Выйти",
+      img: "04",
+      link: "#",
+    },
+  ];
+
+.page__sidebar
+  nav.sidebar-menu
+    each item in navProfile
+      li.sidebar-menu__item
+        a.sidebar-menu__link(href=item.link aria-label=item.title)
+          img(src="img/menu/" + item.img + ".svg",, alt=item.title)
+          span=item.title

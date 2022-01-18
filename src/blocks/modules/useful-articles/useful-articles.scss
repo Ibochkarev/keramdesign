@@ -1,4 +1,11 @@
 .useful-articles {
+  margin-bottom: 30px;
+
+  &__wrap {
+    padding-top: 25px;
+    border-top: 3px solid $a-color-black;
+  }
+
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

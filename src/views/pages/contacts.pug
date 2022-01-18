@@ -1,0 +1,54 @@
+extends ../layouts/default
+include ../helpers/_mixins
+
+block variables
+  - const title = "Контакты"
+
+block content
+  include ../../blocks/modules/header/header.pug
+  main.main
+    .page-contacts
+      .page__container.l-default
+        include ../../blocks/modules/sidebar-menu/sidebar-menu.pug
+        .page__content
+          h1.title--h1 Контакты
+          .page-contacts__item
+            .page-contacts__item-title Адрес:
+            .page-contacts__item-text РФ, 192283, г. Санкт-Петербург​, Фрунзенский р-н, Загребский бульвар, д. 33, к. 1
+          .page-contacts__item
+            .page-contacts__item-title График работы:
+            .page-contacts__item-text Понедельник - Четверг, 9:00-18:00
+            .page-contacts__item-text Пятница, 9:00-17:00
+            .page-contacts__item-text Суббота - Воскресенье, выходной
+          .page-contacts__item
+            .page-contacts__item-title Телефоны:
+            .page-contacts__item-text Виталий
+              |
+              |
+              a(href="tel:+7(931) 2734095") +7(931) 2734095
+            .page-contacts__item-text Павел
+              |
+              |
+              a(href="tel:+7(921) 573-49-11") +7(921) 573-49-11
+            .page-contacts__item-text Евгений
+              |
+              |
+              a(href="+7(921) 942-21-09") +7(921) 942-21-09
+          .page-contacts__item
+            .page-contacts__item-text
+              a(href="tel:8 (812) 366-84-578") 8 (812) 366-84-578
+            .page-contacts__item-text
+              a(href="tel:8 (800) 550-17-19") 8 (800) 550-17-19
+          .page-contacts__item
+            .page-contacts__item-text
+              a(href="mailto:info@master-tool.su") info@master-tool.su
+            .page-contacts__item-text
+              a(href="#") http://www.master-tool.su
+          .page-contacts__map
+            iframe(src="", frameborder="0")
+
+  include ../../blocks/modules/footer/footer.pug
+
+block scripts
+  script(defer src="./js/vendor.js")
+  script(defer src="./js/main.js")

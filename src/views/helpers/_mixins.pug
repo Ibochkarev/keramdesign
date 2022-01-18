@@ -16,8 +16,8 @@ mixin header-section-back(data)
   header.section-heading
     .section-heading__wrapper
       a.section-heading__link(href!=data.link aria-label!=data.name)
+        +svgMono("arrow-left")
         span!=data.name
-        +svgMono("arrow-right")
 
 mixin sales-item(data)
   .sales-item

@@ -1,0 +1,40 @@
+.page-clear {
+  &__content {
+    max-width: 910px;
+    margin: 0 auto 50px;
+  }
+}
+
+.selected-block {
+  margin-bottom: 40px;
+  padding: 45px 0 50px;
+  background: #e5e5e5;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__title {
+    width: 420px;
+    padding-right: 40px;
+    flex: none;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    font-size: 16px;
+    line-height: 19px;
+
+    p {
+      margin-top: 0;
+    }
+  }
+}

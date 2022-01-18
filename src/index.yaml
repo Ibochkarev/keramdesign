@@ -8,7 +8,7 @@ PageList:
   - file: collections.html
     ready: 50
   - file: collection.html
-    ready: 25
+    ready: 75
   - file: brands.html
     ready: 25
   - file: sales.html
@@ -18,8 +18,24 @@ PageList:
   - file: catalog.html
     ready: 50
   - file: category-card.html
-    ready: 10
+    ready: 50
+  - file: category-table.html
+    ready: 50
+  - file: category-string.html
+    ready: 50
   - file: articles.html
     ready: 50
+  - file: article.html
+    ready: 50
+  - file: profile-history-current.html
+    ready: 1
+  - file: profile-history.html
+    ready: 1
+  - file: contacts.html
+    ready: 50
+  - file: information.html
+    ready: 75
+  - file: clear.html
+    ready: 75
   - file: 404.html
     ready: 1
