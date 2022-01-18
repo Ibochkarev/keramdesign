@@ -1778,13 +1778,10 @@ img {
 .section-heading__link {
   display: flex;
   align-items: center;
-  height: 38px;
   padding-right: 10px;
   padding-left: 10px;
   font-size: 15px;
   font-weight: 500;
-  line-height: 39px;
-  border: 1px solid #e4e4e4;
   letter-spacing: -0.2px;
   white-space: nowrap;
 }
@@ -2156,6 +2153,11 @@ img {
 .page-brand__description {
   font-size: 20px;
   line-height: 1.5;
+}
+
+.useful-articles__wrap {
+  padding-top: 25px;
+  border-top: 3px solid #1c1c1c;
 }
 
 .useful-articles__wrapper {
@@ -3176,6 +3178,7 @@ img {
 }
 
 .selected-block {
+  margin-bottom: 40px;
   padding: 45px 0 50px;
   background: #e5e5e5;
 }
@@ -3186,7 +3189,8 @@ img {
 }
 
 .selected-block__title {
-  width: 330px;
+  width: 420px;
+  padding-right: 40px;
   flex: none;
 }
 

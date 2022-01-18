@@ -6,6 +6,7 @@
 }
 
 .selected-block {
+  margin-bottom: 40px;
   padding: 45px 0 50px;
   background: #e5e5e5;
 
@@ -19,7 +20,8 @@
   }
 
   &__title {
-    width: 330px;
+    width: 420px;
+    padding-right: 40px;
     flex: none;
 
     @media (max-width: 768px) {
