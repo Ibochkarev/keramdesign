@@ -435,6 +435,37 @@ img {
   right: 0;
 }
 
+.irs-line, .irs-bar {
+  height: 2px !important;
+  border-radius: 2px !important;
+}
+
+.irs-line {
+  background: #EAEFFD !important;
+}
+
+.irs-bar {
+  background: #22201E !important;
+}
+
+.irs-to, .irs-from, .irs-min, .irs-max {
+  display: none;
+}
+
+.irs--flat .irs-handle {
+  top: 16px;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border: 1px solid #E4E4E4;
+  border-radius: 100%;
+  box-shadow: 0px 2px 4px rgba(16, 0, 0, 0.1);
+
+  i {
+    display: none !important;
+  }
+}
+
 @keyframes show {
   from {
     opacity: 0;
