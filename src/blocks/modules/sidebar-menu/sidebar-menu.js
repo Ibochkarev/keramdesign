@@ -16,7 +16,7 @@ $('.sidebar-filter__dropdown-top').on('click', function() {
 
 $("#range").ionRangeSlider({
     type: "double",
-    min: 0,
+    min: 2,
     max: 75,
     from: 0,
     drag_interval: true,

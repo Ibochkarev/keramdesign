@@ -332,6 +332,9 @@
     &-min, &-max {
       width: calc(50% - 32px);
       margin: 11px 16px 0;
+      label {
+        margin-bottom: 8px;
+      }
       input {
         width: 100%;
         min-height: 38px;

@@ -3388,6 +3388,11 @@ img {
   margin: 11px 16px 0;
 }
 
+.sidebar-filter__price-min label,
+.sidebar-filter__price-max label {
+  margin-bottom: 8px;
+}
+
 .sidebar-filter__price-min input,
 .sidebar-filter__price-max input {
   width: 100%;
