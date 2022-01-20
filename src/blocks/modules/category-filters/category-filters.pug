@@ -1,23 +1,118 @@
 -
-  const categoryMenu=[
-    {
-      title: "Новинки плитки",
-      img: "01",
-      link: "#",
-    },
-    {
-      title: "Популярная плитка",
-      img: "02",
-      link: "#",
-    },
-  ];
+  subcategories = ["Подкатегория первая", "Вторая подкатегория", "Подкатегория третья", "Четвертая подкатегория"]
+  subcategories_radio = ["Все размеры", "15 см", "20 см", "75 см"]
 
 .page__sidebar
   form#mse2_filters(action='{$_modx->resource.id | url}' method='post')
     .page-category__filters
       .page-category__menu
-        each item in categoryMenu
-          li.sidebar-menu__item
-            a.sidebar-menu__link(href=item.link aria-label=item.title)
-              img(src="img/menu/" + item.img + ".svg",, alt=item.title)
-              span=item.title
+        a.sidebar-filter__item.sidebar-filter__item--link(href="") 
+          .sidebar-filter__item-icon 
+            img(src="img/svg/star.svg", alt="")
+          .sidebar-filter__item-title Новинки плитки
+        .sidebar-filter__item 
+          .sidebar-filter__dropdown 
+            .sidebar-filter__dropdown-head
+              .sidebar-filter__item-icon 
+                img(src="img/svg/eye.svg", alt="")
+              .sidebar-filter__dropdown-title Популярная плитка
+            .sidebar-filter__dropdown-body
+              .sidebar-filter__dropdown-top
+                .sidebar-filter__dropdown-title Плитка для ванной
+                .sidebar-filter__dropdown-icon  
+                  +svgMono('arrow-dropdown')
+              .sidebar-filter__dropdown-subcategories
+                each subcategory in subcategories 
+                  .sidebar-filter__dropdown-subcategory= subcategory
+                    input(type="checkbox" value="subcategory")
+          .sidebar-filter__dropdown 
+            .sidebar-filter__dropdown-body
+              .sidebar-filter__dropdown-top
+                .sidebar-filter__dropdown-title Плитка на кухню
+                .sidebar-filter__dropdown-icon  
+                  +svgMono('arrow-dropdown')
+              .sidebar-filter__dropdown-subcategories
+                each subcategory in subcategories 
+                  .sidebar-filter__dropdown-subcategory= subcategory
+                    input(type="checkbox" value="subcategory")
+          .sidebar-filter__dropdown 
+            .sidebar-filter__dropdown-body
+              .sidebar-filter__dropdown-top
+                .sidebar-filter__dropdown-title Плитка в корридор
+                .sidebar-filter__dropdown-icon  
+                  +svgMono('arrow-dropdown')
+              .sidebar-filter__dropdown-subcategories
+                each subcategory in subcategories 
+                  .sidebar-filter__dropdown-subcategory= subcategory
+                    input(type="checkbox" value="subcategory")
+          .sidebar-filter__dropdown 
+            .sidebar-filter__dropdown-body
+              .sidebar-filter__dropdown-top
+                .sidebar-filter__dropdown-title Мозаика
+                .sidebar-filter__dropdown-icon  
+                  +svgMono('arrow-dropdown')
+              .sidebar-filter__dropdown-subcategories
+                each subcategory in subcategories 
+                  .sidebar-filter__dropdown-subcategory= subcategory
+                    input(type="checkbox" value="subcategory")
+        .sidebar-filter__item 
+          .sidebar-filter__show
+            .sidebar-filter__show-text Показавать только в наличии
+            input.sidebar-filter__show-input(type="checkbox")
+            .sidebar-filter__show-btn
+        .sidebar-filter__item 
+          .sidebar-filter__price 
+            .sidebar-filter__item-title Цена
+            .sidebar-filter__price-range#range
+            .sidebar-filter__price-inputs 
+              .sidebar-filter__price-min
+                label(for="") Мин
+                input(type="number" max="75" min="0") 
+              .sidebar-filter__price-max
+                label(for="") Макс
+                input(type="number" max="75" min="0") 
+        .sidebar-filter__item
+          .sidebar-filter__dropdown
+            .sidebar-filter__dropdown-top 
+              .sidebar-filter__dropdown-title Размер
+              .sidebar-filter__dropdown-icon  
+                  +svgMono('arrow-dropdown')
+            .sidebar-filter__sizes
+              each subcategory_radio in subcategories_radio 
+                - let i = 0
+                .sidebar-filter__size
+                  - if (i == 0)
+                    input.sidebar-filter__size-input(type="radio" name="size" checked)
+                  - else 
+                    input.sidebar-filter__size-input(type="radio" name="size")
+                  - i++
+                  .sidebar-filter__size-btn
+                  .sidebar-filter__size-text= subcategory_radio
+        .sidebar-filter__item
+          .sidebar-filter__dropdown 
+            .sidebar-filter__dropdown-top
+              .sidebar-filter__dropdown-title Бренды
+              .sidebar-filter__dropdown-icon  
+                +svgMono('arrow-dropdown')
+            .sidebar-filter__dropdown-subcategories
+              each subcategory in subcategories 
+                .sidebar-filter__dropdown-subcategory= subcategory
+                  input(type="checkbox" value="subcategory")
+        .sidebar-filter__item
+          .sidebar-filter__dropdown 
+            .sidebar-filter__dropdown-top
+              .sidebar-filter__dropdown-title Страны (?)
+              .sidebar-filter__dropdown-icon  
+                +svgMono('arrow-dropdown')
+            .sidebar-filter__dropdown-subcategories
+              each subcategory in subcategories 
+                .sidebar-filter__dropdown-subcategory= subcategory
+                  input(type="checkbox" value="subcategory")
+    .sidebar-filter__marketing
+      .sidebar-filter__marketing-img 
+        picture
+          source(srcset="img/filter/filter.webp" type="image/webp")
+          source(srcset="img/filter/filter.jpg" type="image/png")
+          img.collection-item__image(src="img/img/filter/filter.jpg" alt)
+      .sidebar-filter__marketing-title Сезонная распродажа остатков топовой коллекции 
+      a.sidebar-filter__marketing-btn.btn.btn--white(href="") Адрес на карте

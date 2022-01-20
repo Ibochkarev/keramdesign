@@ -104,10 +104,238 @@
           <div class="page__sidebar">
             <form id="mse2_filters" action="{$_modx-&gt;resource.id | url}" method="post">
               <div class="page-category__filters">
-                <div class="page-category__menu">
-                  <li class="sidebar-menu__item"><a class="sidebar-menu__link" href="#" aria-label="Новинки плитки"><img src="img/menu/01.svg"  alt="Новинки плитки"><span>Новинки плитки</span></a></li>
-                  <li class="sidebar-menu__item"><a class="sidebar-menu__link" href="#" aria-label="Популярная плитка"><img src="img/menu/02.svg"  alt="Популярная плитка"><span>Популярная плитка</span></a></li>
+                <div class="page-category__menu"><a class="sidebar-filter__item sidebar-filter__item--link" href=""> 
+                    <div class="sidebar-filter__item-icon"> <img src="img/svg/star.svg" alt=""></div>
+                    <div class="sidebar-filter__item-title">Новинки плитки</div></a>
+                  <div class="sidebar-filter__item"> 
+                    <div class="sidebar-filter__dropdown"> 
+                      <div class="sidebar-filter__dropdown-head">
+                        <div class="sidebar-filter__item-icon"> <img src="img/svg/eye.svg" alt=""></div>
+                        <div class="sidebar-filter__dropdown-title">Популярная плитка</div>
+                      </div>
+                      <div class="sidebar-filter__dropdown-body">
+                        <div class="sidebar-filter__dropdown-top">
+                          <div class="sidebar-filter__dropdown-title">Плитка для ванной</div>
+                          <div class="sidebar-filter__dropdown-icon"> 
+                            <svg class="ico ico-mono-arrow-dropdown">
+                              <use xlink:href="img/sprite-mono.svg#ico-mono-arrow-dropdown"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="sidebar-filter__dropdown-subcategories">
+                          <div class="sidebar-filter__dropdown-subcategory">Подкатегория первая
+                            <input type="checkbox" value="subcategory">
+                          </div>
+                          <div class="sidebar-filter__dropdown-subcategory">Вторая подкатегория
+                            <input type="checkbox" value="subcategory">
+                          </div>
+                          <div class="sidebar-filter__dropdown-subcategory">Подкатегория третья
+                            <input type="checkbox" value="subcategory">
+                          </div>
+                          <div class="sidebar-filter__dropdown-subcategory">Четвертая подкатегория
+                            <input type="checkbox" value="subcategory">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sidebar-filter__dropdown"> 
+                      <div class="sidebar-filter__dropdown-body">
+                        <div class="sidebar-filter__dropdown-top">
+                          <div class="sidebar-filter__dropdown-title">Плитка на кухню</div>
+                          <div class="sidebar-filter__dropdown-icon"> 
+                            <svg class="ico ico-mono-arrow-dropdown">
+                              <use xlink:href="img/sprite-mono.svg#ico-mono-arrow-dropdown"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="sidebar-filter__dropdown-subcategories">
+                          <div class="sidebar-filter__dropdown-subcategory">Подкатегория первая
+                            <input type="checkbox" value="subcategory">
+                          </div>
+                          <div class="sidebar-filter__dropdown-subcategory">Вторая подкатегория
+                            <input type="checkbox" value="subcategory">
+                          </div>
+                          <div class="sidebar-filter__dropdown-subcategory">Подкатегория третья
+                            <input type="checkbox" value="subcategory">
+                          </div>
+                          <div class="sidebar-filter__dropdown-subcategory">Четвертая подкатегория
+                            <input type="checkbox" value="subcategory">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sidebar-filter__dropdown"> 
+                      <div class="sidebar-filter__dropdown-body">
+                        <div class="sidebar-filter__dropdown-top">
+                          <div class="sidebar-filter__dropdown-title">Плитка в корридор</div>
+                          <div class="sidebar-filter__dropdown-icon"> 
+                            <svg class="ico ico-mono-arrow-dropdown">
+                              <use xlink:href="img/sprite-mono.svg#ico-mono-arrow-dropdown"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="sidebar-filter__dropdown-subcategories">
+                          <div class="sidebar-filter__dropdown-subcategory">Подкатегория первая
+                            <input type="checkbox" value="subcategory">
+                          </div>
+                          <div class="sidebar-filter__dropdown-subcategory">Вторая подкатегория
+                            <input type="checkbox" value="subcategory">
+                          </div>
+                          <div class="sidebar-filter__dropdown-subcategory">Подкатегория третья
+                            <input type="checkbox" value="subcategory">
+                          </div>
+                          <div class="sidebar-filter__dropdown-subcategory">Четвертая подкатегория
+                            <input type="checkbox" value="subcategory">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sidebar-filter__dropdown"> 
+                      <div class="sidebar-filter__dropdown-body">
+                        <div class="sidebar-filter__dropdown-top">
+                          <div class="sidebar-filter__dropdown-title">Мозаика</div>
+                          <div class="sidebar-filter__dropdown-icon"> 
+                            <svg class="ico ico-mono-arrow-dropdown">
+                              <use xlink:href="img/sprite-mono.svg#ico-mono-arrow-dropdown"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="sidebar-filter__dropdown-subcategories">
+                          <div class="sidebar-filter__dropdown-subcategory">Подкатегория первая
+                            <input type="checkbox" value="subcategory">
+                          </div>
+                          <div class="sidebar-filter__dropdown-subcategory">Вторая подкатегория
+                            <input type="checkbox" value="subcategory">
+                          </div>
+                          <div class="sidebar-filter__dropdown-subcategory">Подкатегория третья
+                            <input type="checkbox" value="subcategory">
+                          </div>
+                          <div class="sidebar-filter__dropdown-subcategory">Четвертая подкатегория
+                            <input type="checkbox" value="subcategory">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sidebar-filter__item"> 
+                    <div class="sidebar-filter__show">
+                      <div class="sidebar-filter__show-text">Показавать только в наличии</div>
+                      <input class="sidebar-filter__show-input" type="checkbox">
+                      <div class="sidebar-filter__show-btn"></div>
+                    </div>
+                  </div>
+                  <div class="sidebar-filter__item"> 
+                    <div class="sidebar-filter__price"> 
+                      <div class="sidebar-filter__item-title">Цена</div>
+                      <div class="sidebar-filter__price-range" id="range"></div>
+                      <div class="sidebar-filter__price-inputs"> 
+                        <div class="sidebar-filter__price-min">
+                          <label for="">Мин</label>
+                          <input type="number" max="75" min="0">
+                        </div>
+                        <div class="sidebar-filter__price-max">
+                          <label for="">Макс</label>
+                          <input type="number" max="75" min="0">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sidebar-filter__item">
+                    <div class="sidebar-filter__dropdown">
+                      <div class="sidebar-filter__dropdown-top"> 
+                        <div class="sidebar-filter__dropdown-title">Размер</div>
+                        <div class="sidebar-filter__dropdown-icon"> 
+                          <svg class="ico ico-mono-arrow-dropdown">
+                            <use xlink:href="img/sprite-mono.svg#ico-mono-arrow-dropdown"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="sidebar-filter__sizes">
+                        <div class="sidebar-filter__size">
+                          <input class="sidebar-filter__size-input" type="radio" name="size" checked>
+                          <div class="sidebar-filter__size-btn"></div>
+                          <div class="sidebar-filter__size-text">Все размеры</div>
+                        </div>
+                        <div class="sidebar-filter__size">
+                          <input class="sidebar-filter__size-input" type="radio" name="size" checked>
+                          <div class="sidebar-filter__size-btn"></div>
+                          <div class="sidebar-filter__size-text">15 см</div>
+                        </div>
+                        <div class="sidebar-filter__size">
+                          <input class="sidebar-filter__size-input" type="radio" name="size" checked>
+                          <div class="sidebar-filter__size-btn"></div>
+                          <div class="sidebar-filter__size-text">20 см</div>
+                        </div>
+                        <div class="sidebar-filter__size">
+                          <input class="sidebar-filter__size-input" type="radio" name="size" checked>
+                          <div class="sidebar-filter__size-btn"></div>
+                          <div class="sidebar-filter__size-text">75 см</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sidebar-filter__item">
+                    <div class="sidebar-filter__dropdown"> 
+                      <div class="sidebar-filter__dropdown-top">
+                        <div class="sidebar-filter__dropdown-title">Бренды</div>
+                        <div class="sidebar-filter__dropdown-icon"> 
+                          <svg class="ico ico-mono-arrow-dropdown">
+                            <use xlink:href="img/sprite-mono.svg#ico-mono-arrow-dropdown"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="sidebar-filter__dropdown-subcategories">
+                        <div class="sidebar-filter__dropdown-subcategory">Подкатегория первая
+                          <input type="checkbox" value="subcategory">
+                        </div>
+                        <div class="sidebar-filter__dropdown-subcategory">Вторая подкатегория
+                          <input type="checkbox" value="subcategory">
+                        </div>
+                        <div class="sidebar-filter__dropdown-subcategory">Подкатегория третья
+                          <input type="checkbox" value="subcategory">
+                        </div>
+                        <div class="sidebar-filter__dropdown-subcategory">Четвертая подкатегория
+                          <input type="checkbox" value="subcategory">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sidebar-filter__item">
+                    <div class="sidebar-filter__dropdown"> 
+                      <div class="sidebar-filter__dropdown-top">
+                        <div class="sidebar-filter__dropdown-title">Страны (?)</div>
+                        <div class="sidebar-filter__dropdown-icon"> 
+                          <svg class="ico ico-mono-arrow-dropdown">
+                            <use xlink:href="img/sprite-mono.svg#ico-mono-arrow-dropdown"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="sidebar-filter__dropdown-subcategories">
+                        <div class="sidebar-filter__dropdown-subcategory">Подкатегория первая
+                          <input type="checkbox" value="subcategory">
+                        </div>
+                        <div class="sidebar-filter__dropdown-subcategory">Вторая подкатегория
+                          <input type="checkbox" value="subcategory">
+                        </div>
+                        <div class="sidebar-filter__dropdown-subcategory">Подкатегория третья
+                          <input type="checkbox" value="subcategory">
+                        </div>
+                        <div class="sidebar-filter__dropdown-subcategory">Четвертая подкатегория
+                          <input type="checkbox" value="subcategory">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="sidebar-filter__marketing">
+                <div class="sidebar-filter__marketing-img"> 
+                  <picture>
+                    <source srcset="img/filter/filter.webp" type="image/webp">
+                    <source srcset="img/filter/filter.jpg" type="image/png"><img class="collection-item__image" src="img/img/filter/filter.jpg" alt>
+                  </picture>
+                </div>
+                <div class="sidebar-filter__marketing-title">Сезонная распродажа остатков топовой коллекции </div><a class="sidebar-filter__marketing-btn btn btn--white" href="">Адрес на карте</a>
               </div>
             </form>
           </div>

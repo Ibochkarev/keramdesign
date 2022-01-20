@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="ico-mono-arrow-left" viewBox="0 0 24 24">
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="ico-mono-arrow-dropdown" viewBox="0 0 24 24">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.667 13.89l1.88 1.777 6.12-5.769 6.12 5.769 1.88-1.776-8-7.558-8 7.558z"/>
+</symbol><symbol id="ico-mono-arrow-left" viewBox="0 0 24 24">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M14 4l1.88 1.88L9.773 12l6.107 6.12L14 20l-8-8 8-8z"/>
 </symbol><symbol id="ico-mono-arrow-right" viewBox="0 0 24 24">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M9.776 4L8 5.88 13.769 12 8 18.12 9.776 20l7.557-8-7.557-8z"/>
